@@ -1,11 +1,58 @@
 {% extends 'src/templates/layouts/base.njk' %}
 
-{% from 'src/templates/partials/ui/icon.njk' import icon %}
-
 {% block content %}
-  <h1>{{ index.title }}</h1>
+<h1 class="heading-h1">{{ index.title }}</h1>
+<h2 class="heading-h2">{{ index.title }}</h1>
+<h3 class="heading-h3">{{ index.title }}</h1>
+<h4 class="heading-h4">{{ index.title }}</h1>
+<h5 class="heading-h5">{{ catalog.title }}</h1>
 
-  {{ icon('check') }}
+<div class="buttons">
+    <button class="button button--primary button--lg">Button</Button>
+    <button class="button button--primary button--md">Button</Button>
+    <button class="button button--primary button--sm">Button</Button>
+</div>
+<div class="buttons">
+    <button class="button button--secondary button--lg">Button</Button>
+    <button class="button button--secondary button--md">Button</Button>
+    <button class="button button--secondary button--sm">Button</Button>
 
-  {% include 'src/templates/partials/component.njk' %}
+</div>
+{# ====== Switchers ========= #}
+<label class="catalog-filter__option">
+    <input class="switcher" type="checkbox"/>
+    <input class="switcher" type="checkbox"/>
+    <input class="switcher" type="checkbox"/>
+</label>
+
+{# ====== Radios ========= #}
+<label class="catalog-filter__option">
+    <input type="radio" class="default-radio" name="gender">
+    <span class="custom-radio"></span>
+    Yellow
+</label>
+<label class="catalog-filter__option">
+    <input type="radio" class="default-radio" name="gender">
+    <span class="custom-radio"></span>
+    Yellow
+</label>
+<label class="catalog-filter__option">
+    <input type="radio" class="default-radio" name="gender">
+    <span class="custom-radio"></span>
+    Yellow
+</label>
+
+{# ====== Checkboxes ========= #}
+<label class="catalog-filter__option">
+    <input type="checkbox" class="default-checkbox">
+    <span class="custom-checkbox"></span>
+    Combatant
+</label>
+<label class="catalog-filter__option">
+    <input type="checkbox" class="default-checkbox">
+    <span class="custom-checkbox"></span>
+    Combatant
+</label>
+   
+{% include 'src/templates/partials/component.njk' %}
 {% endblock %}
