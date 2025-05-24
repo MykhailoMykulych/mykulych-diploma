@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
+    background-color: var(--bg-alternative2);
 }
 
 body {
     font-family: var(--font-primary);
+    background-color: var(--bg-base);
     user-select: none;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
