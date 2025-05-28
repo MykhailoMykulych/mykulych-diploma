@@ -1,0 +1,7 @@
+@use "../ui/brakepoints" as *;
+@use "../mixins" as *;
+
+.products {
+    min-height: 300px;
+    background-color: grey;
+}

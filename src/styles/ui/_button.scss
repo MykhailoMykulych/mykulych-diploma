@@ -1,0 +1,290 @@
+@use "variables" as *;
+
+// Удалю после проверки ------
+.buttons {
+    margin-bottom: 32px;
+    margin-left: 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+// ------------------------
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 8px;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    border: 2px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    color: var(--color-primary);
+    transition-duration: 0.3s;
+    outline-offset: -1px;
+
+    &--primary {
+        border-color: var(--marina-800);
+        background-color: var(--marina-800);
+        color: var(--fixed-primaryWhite);
+
+        &:hover {
+            border-color: var(--marina-600);
+            background-color: var(--marina-600);
+        }
+
+        &:focus {
+            border-color: var(--marina-600);
+            background-color: var(--marina-800);
+            outline: 2px solid var(--marina-600);
+            transition: none;
+        }
+
+        &:active {
+            outline: 0 none;
+            background-color: var(--marina-900);
+            border-color: var(--marina-900);
+        }
+    }
+
+    &--secondary {
+        border-color: var(--seporator-bold);
+
+        &:hover {
+            background-color: var(--seporator);
+            border-color: var(--seporator);
+        }
+
+        &:focus {
+            border-color: var(--marina-600);
+            background-color: var(--seporator);
+            outline: 2px solid var(--marina-600);
+            transition: none;
+        }
+
+        &:active {
+            outline: 0 none;
+            background-color: var(--seporator);
+            border-color: var(--seporator);
+        }
+    }
+
+    &--tertiary {
+        border: 1px solid transparent;
+        &:hover {
+            border-color: var(--marina-600);
+        }
+
+        &:focus {
+            border-color: var(--marina-600);
+            outline: 3px solid var(--marina-600);
+            transition: none;
+        }
+
+        &:active {
+            border-color: transparent;
+            background-color: var(--seporator);
+            outline: 0 none;
+        }
+    }
+
+    &--lg {
+        min-height: 64px;
+        padding: 18px 32px;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    &--md {
+        min-height: 40px;
+        padding: 8px 20px;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    &--sm {
+        min-height: 32px;
+        padding: 6px 12px;
+        font-size: 16px;
+        line-height: 1;
+    }
+
+    &--icon-lg {
+        padding: 20px;
+    }
+
+    &--icon-md {
+        padding: 8px;
+    }
+
+    &--icon-sm {
+        padding: 9px;
+    }
+}
+
+// .BATON {
+
+//     font-size: 18px;
+//     line-height: 24px;
+//     font-weight: 600;
+//     font-family: $font-base;
+//     padding: $btn-padding;
+//     font-weight: 600;
+//     text-decoration: none;
+//     color: $color-primary;
+//     transition-duration: $tran-duration;
+
+//     &--primary {
+
+//     }
+
+//     &--secondary {
+
+//     }
+
+//     &--tertiary {
+
+//     }
+
+//     &--lg {
+
+//     }
+
+//     &--md {
+
+//     }
+
+//     &--sm {
+//         padding: 2px;
+//         font-size: 8px;
+//     }
+
+// //   Accent
+//         &--accent {
+//             background-color: $color-accent;
+
+//                 &:hover {
+//                 background-color: $color-border-focus;
+//             }
+
+//             &:focus {
+//                 background-color: $color-accent;
+//             }
+
+//             &:focus-visible {
+//                 outline: solid $color-border-focus;
+//             }
+
+//             &:active {
+//                 background-color: $color-active;
+//                 outline: none;
+//             }
+
+//             &:disabled {
+//                 background-color: $color-seporator;
+//                 color: $color-disabled;
+//             }
+//         }
+
+//     /* secondary */
+//         &--secondary {
+//             background-color: transparent;
+//             outline: 2px solid $color-seporator;
+//             padding: $btn-padding;
+
+//             &:hover {
+//             background-color: $color-border;
+//             /* border: 2px solid $color-border; */
+//         }
+
+//         &:focus{
+//             background-color: $color-border;
+//         }
+
+//         &:focus-visible {
+//             outline: 4px solid $color-border-focus;
+//             border-color: $color-border-focus;
+//         }
+
+//         &:active{
+//             background-color: $color-border;
+//             /* border: 2px solid $color-border; */
+//         }
+
+//         &:disabled {
+//         color: $color-disabled;
+//         background-color: $color-seporator;
+//         border: 2px solid $color-disabled;
+//         }
+//     }
+
+//     /* tag */
+//     &--tag {
+//         background-color: transparent;
+//         outline: 1px solid $color-seporator;
+//         padding: 6px 12px;
+//         font-size: 14px;
+//         line-height: 20px;
+
+//             &:hover {
+//             background-color: $color-border;
+//             /* border: 2px solid $color-border; */
+//     }
+
+//         &:focus {
+//             background-color: $color-border;
+//         }
+
+//         &:focus-visible  {
+//             outline: 4px solid $color-border-focus;
+//             border-color: $color-border-focus;
+//         }
+
+//         &:active {
+//             background-color: $color-border;
+//         }
+
+//         &:disabled {
+//             color: $color-disabled;
+//             background-color: $color-seporator;
+//             border: 2px solid $color-disabled;
+//         }
+//     }
+
+//     &--alt {
+//         background-color: $BaseIcon;
+//          color:$bg-main;
+
+//            &:hover {
+//             background-color: $Alternative2-Invert;
+//            }
+
+//            &:focus {
+
+//            }
+
+//            &:focus-visible {
+//             outline: 2px solid $color-border-focus;
+//             border-color: $color-border-focus;
+//            }
+
+//            &:active {
+//              color:$color-primary;
+//              background-color: $color-disabled;
+//            }
+
+//            &:disabled {
+//             color:$color-disabled;
+//             background-color:$color-seporator ;
+//           }
+//     }
+
+//     &--icon {
+//         padding: 12px;
+//         background-color: transparent;
+//             outline: 2px solid $color-seporator;
+// }
+// }

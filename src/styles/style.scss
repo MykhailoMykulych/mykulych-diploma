@@ -1,16 +1,25 @@
-@use 'ui/button';
-@use "variables";
-@use "main-banner";
+// ======= Global ============
+@use "ui/normalize";
+@use "global-styles";
+@use "mixins";
+@use "ui/brakepoints.scss";
+@use "ui/button";
+@use "ui/inputs";
+@use "ui/links";
+// ======= Main Sections =====
+@use "sections";
+// ======= Header ============
+@use "header/header";
 
-body {
-  margin: 0;
-  background: url("/src/assets/images/main-banner-3.png?format=avif");
-}
+// ======= Home Page ==============
+@use "home/main-banner";
+@use "home/products";
+@use "home/categories";
+@use "home/trending";
+@use "home/pricing";
+@use "home/faq";
+@use "home/blog-section";
 
-header, footer {
-  padding: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-gray);
-}
+// ======= Footer ============
+@use "footer/footer";
+

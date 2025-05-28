@@ -1,0 +1,27 @@
+@use "ui/brakepoints" as *;
+@use "mixins" as *;
+
+.section {
+    &--main-banner {
+        background: linear-gradient(
+            90deg,
+            rgba(240, 246, 253, 1) 44%,
+            rgba(255, 255, 255, 1) 100%
+        );
+    }
+
+    &__content {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1440px;
+        padding-inline: 16px;
+
+        @include md {
+            padding-inline: 40px;
+        }
+
+        @include lg {
+            padding-inline: 80px;
+        }
+    }
+}

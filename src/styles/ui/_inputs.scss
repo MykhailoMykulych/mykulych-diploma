@@ -1,0 +1,184 @@
+// ===================== Switcher =====================
+.switcher {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 40px;
+    height: 20px;
+    background: var(--color-disabled);
+    display: block;
+    border-radius: 10px;
+    position: relative;
+    appearance: none;
+    pointer-events: auto;
+
+    &:hover {
+        background-color: var(--line);
+    }
+
+    &:focus {
+        outline: 2px solid var(--marina-600);
+        outline-offset: 2px;
+    }
+
+    &:active {
+        background-color: var(--color-secondary);
+        outline: none;
+
+        &:after {
+            background-color: var(--bg-alternative2-invert);
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        background: #ffff;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+    &:checked {
+        background-color: var(--marina-800);
+
+        &:hover {
+            background-color: var(--marina-600);
+        }
+
+        &:focus {
+            outline: 2px solid var(--marina-600);
+            outline-offset: 2px;
+        }
+
+        &:active {
+            background-color: var(--marina-600);
+
+            &:after {
+                background-color: var(--fixed-baseWhite);
+            }
+        }
+
+        &:after {
+            left: calc(100% - 2px);
+            transform: translateX(-100%);
+        }
+    }
+}
+
+// ===================== Radio =====================
+.custom-radio {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: var(--bg-base);
+    border: 2px solid var(--line);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: relative;
+}
+.default-radio {
+    width: 0;
+    height: 0;
+    position: absolute;
+
+    &:hover {
+        & + .custom-radio {
+            background-color: var(--bg-alternative2);
+        }
+    }
+
+    &:active {
+        & + .custom-radio {
+            border: 5px solid var(--marina-800);
+        }
+    }
+
+    &:focus {
+        & + .custom-radio {
+            border: 2px solid var(--color-secondary2);
+            outline: 2px solid var(--marina-600);
+            outline-offset: 1px;
+        }
+    }
+
+    //---- when checked ----
+    &:checked {
+        & + .custom-radio {
+            border: 5px solid var(--line);
+        }
+        &:active {
+            & + .custom-radio {
+                border: 5px solid var(--marina-800);
+            }
+        }
+        &:focus {
+            & + .custom-radio {
+                border: 5px solid var(--marina-600);
+            }
+        }
+    }
+    // ---------------------
+}
+
+// ===================== Checkbox =====================
+// Удалю после проверки ------
+.catalog-filter__option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+// ------------------------
+
+.custom-checkbox {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    background-color: var(--bg-base);
+    border: 1px solid var(--line);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: relative;
+}
+
+.default-checkbox {
+    width: 0;
+    height: 0;
+    position: absolute;
+
+    &:hover {
+        & + .custom-checkbox {
+            background-color: var(--bg-alternative2);
+        }
+    }
+
+    &:active {
+        & + .custom-checkbox {
+            background-color: var(--marina-200);
+            border-color: var(--marina-200);
+        }
+    }
+
+    &:focus {
+        & + .custom-checkbox {
+            border-color: transparent;
+            background-color: var(--bg-alternative);
+            outline: 2px solid var(--marina-600);
+        }
+    }
+
+    // ---- when checked -----
+    &:checked {
+        & + .custom-checkbox {
+            background-image: url(/assets/images/mark-blue.svg);
+            background-size: 8px auto;
+            background-repeat: no-repeat;
+            background-color: var(--marina-800);
+            border: 2px solid var(--marina-800);
+        }
+    }
+}

@@ -1,11 +1,10 @@
 {% extends 'src/templates/layouts/base.njk' %}
-
-{% from 'src/templates/partials/ui/icon.njk' import icon %}
-
 {% block content %}
-<h1>{{ index.title }}</h1>
-
-{#{{ icon('check') }}#}
-
-{% include 'src/templates/partials/main-banner.njk' %}
+            {% include 'src/templates/partials/home/main-banner.njk' %}
+            {% include 'src/templates/partials/home/products.njk' %}
+            {% include 'src/templates/partials/home/categories.njk' %}
+            {% include 'src/templates/partials/home/trending.njk' %}
+            {% include 'src/templates/partials/home/pricing.njk' %}
+            {% include 'src/templates/partials/home/faq.njk' %}
+            {% include 'src/templates/partials/home/blog-section.njk' %}
 {% endblock %}
