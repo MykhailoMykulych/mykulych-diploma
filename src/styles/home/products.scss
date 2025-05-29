@@ -23,21 +23,29 @@
         min-width: 224px;
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     &__illustration {
-        border-radius: 20px;
-        padding: 37px;
+        color: var(--marina-800);
         background-color: var(--bg-alternative2);
-        width: 100%;
+        padding: 37px;
+        border-radius: 20px;
+        transition:
+            color var(--tran-duration),
+            background-color var(--tran-duration);
 
         &:hover {
-            background-color: #0265DC;
+            background-color: #0265dc;
+            color: var(--surface-marina);
         }
 
-        &-img {
+        & svg {
             width: 100%;
-            color: red;
         }
+    }
+
+    &__text {
+        @include subheader-s5;
     }
 }
