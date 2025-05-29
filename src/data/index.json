@@ -1,33 +1,34 @@
-{
-  "products": [
-    {
-      "image": "/src/assets/images/ui-kits.svg",
-      "text": "Text 1",
-      "alt": "Alt 1"
-    },
-    {
-      "image": "/src/assets/images/ui-kits.svg",
-      "text": "Text 2",
-      "alt": "Alt 2"
-    },
-    {
-      "image": "/src/assets/images/ui-kits.svg",
-      "text": "Text 3",
-      "alt": "Alt 3"
-    },
-    {
-      "image": "/src/assets/images/ui-kits.svg",
-      "text": "Text 4",
-      "alt": "Alt 4"
-    },
-    {
-      "image": "/src/assets/images/ui-kits.svg",
-      "text": "Text 5",
-      "alt": "Alt 5"
-    }
-  
-  ]  
+{   
+   "banner_title1": "Craft Your Success with Our",
+   "banner_title_link": "Digital",
+   "banner_title2": "Assets",
+   "banner_text": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+
+    "products": [
+        {
+            "image": "/src/assets/images/ui-kits.svg",
+            "text": "Text 1",
+            "alt": "Alt 1"
+        },
+        {
+            "image": "/src/assets/images/ui-kits.svg",
+            "text": "Text 2",
+            "alt": "Alt 2"
+        },
+        {
+            "image": "/src/assets/images/ui-kits.svg",
+            "text": "Text 3",
+            "alt": "Alt 3"
+        },
+        {
+            "image": "/src/assets/images/ui-kits.svg",
+            "text": "Text 4",
+            "alt": "Alt 4"
+        },
+        {
+            "image": "/src/assets/images/ui-kits.svg",
+            "text": "Text 5",
+            "alt": "Alt 5"
+        }
+    ]
 }
-
- 
-
