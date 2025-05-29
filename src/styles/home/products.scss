@@ -1,7 +1,38 @@
-@use "../ui/brakepoints" as *;
-@use "../mixins" as *;
+@use '../ui/brakepoints' as *;
+@use '../mixins' as *;
 
 .products {
-    min-height: 300px;
-    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: 272px;
+    display: grid;
+    overflow: auto;
+    gap: 16px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+
+    &::-webkit-scrollbar {
+        display: none; /* Chrome/Safari */
+    }
+
+    &__card {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        min-width: 224px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__illustration {
+        border-radius: 20px;
+        padding: 37px;
+        background-color: var(--bg-alternative2);
+        width: 100%;
+
+        &-img {
+            width: 100%;
+        }
+    }
 }

@@ -1,9 +1,33 @@
 {
-  "index": {
-    "title": "Hello World!"
-  },
-
-  "catalog": {
-    "title": "Privet"
-  }
+  "products": [
+    {
+      "image": "/src/assets/images/ui-kits.svg",
+      "text": "Text 1",
+      "alt": "Alt 1"
+    },
+    {
+      "image": "/src/assets/images/ui-kits.svg",
+      "text": "Text 2",
+      "alt": "Alt 2"
+    },
+    {
+      "image": "/src/assets/images/ui-kits.svg",
+      "text": "Text 3",
+      "alt": "Alt 3"
+    },
+    {
+      "image": "/src/assets/images/ui-kits.svg",
+      "text": "Text 4",
+      "alt": "Alt 4"
+    },
+    {
+      "image": "/src/assets/images/ui-kits.svg",
+      "text": "Text 5",
+      "alt": "Alt 5"
+    }
+  
+  ]  
 }
+
+ 
+
