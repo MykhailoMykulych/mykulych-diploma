@@ -2,12 +2,14 @@
 @use "ui/normalize";
 @use "global-styles";
 @use "mixins";
-@use "ui/brakepoints.scss";
+@use "ui/brakepoints";
 @use "ui/button";
 @use "ui/inputs";
 @use "ui/links";
+
 // ======= Main Sections =====
 @use "sections";
+
 // ======= Header ============
 @use "header/header";
 
@@ -22,4 +24,6 @@
 
 // ======= Footer ============
 @use "footer/footer";
+
+// ===========================
 
