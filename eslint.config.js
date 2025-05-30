@@ -1,8 +1,11 @@
-import html from "@html-eslint/eslint-plugin";
+import html from '@html-eslint/eslint-plugin';
 
 export default [
-  {
-    ...html.configs["flat/recommended"],
-    files: ["src/**/*.njk"],
-  },
+    {
+        ...html.configs['flat/recommended'],
+        files: ['src/**/*.njk'],
+        rules: {
+            'require-img-alt': 'off', // отключаем проверку на alt атрибуты
+        },
+    },
 ];

@@ -7,9 +7,7 @@
 body {
     font-family: var(--font-primary);
     background-color: var(--bg-base);
-    user-select: none;
-    user-select: none; /* Safari */
-    user-select: none; /* Firefox */
+    color: var(--color-primary); /* Safari */ /* Firefox */
     user-select: none; /* Internet Explorer/Edge */
 }
 

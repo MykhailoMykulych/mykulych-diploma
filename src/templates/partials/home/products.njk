@@ -5,7 +5,7 @@
             {% from "../product.njk" import productCard %}
             <div class="products">
                 {% for item in products %}
-                    {{ productCard(item.image, item.alt, item.text) }}
+                {{ productCard(item.image, item.alt, item.text) }}
                 {% endfor %}
             </div>
        
