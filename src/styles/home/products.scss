@@ -2,18 +2,13 @@
 @use '../mixins' as *;
 
 .products {
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     min-height: 272px;
     display: grid;
     overflow: auto;
     gap: 16px;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
-
-    &::-webkit-scrollbar {
-        display: none; /* Chrome/Safari */
-    }
+   
+    @include hide-scrollbar;
 
     &__card {
         flex-direction: column;

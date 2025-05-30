@@ -1,5 +1,13 @@
+{# 
+{% from 'src/templates/partials/ui/icon.njk' import icon %}
+{{ icon("icon-chevron-left") }} 
+#}
 {% macro icon(type) %}
   <svg class="icon">
     <use href="/src/assets/sprite.svg#{{ type }}" />
   </svg>
+{% endmacro %}
+
+{% macro badge(type) %}
+  <img src="/src/assets/images/label-badge.svg">
 {% endmacro %}

@@ -31,9 +31,8 @@
                 <div class="header__search">
                     <input type="search" class="text-field" placeholder="Search for Digital Assets">
                     <button class="button button--primary button--icon-md" aria-label="Search">
-                        <svg class="header__search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" viewBox="0 0 24 24">
-                            <path d="M17 4h-2V2h-6v2H7v2H5v2H3v14h18V8h-2V6h-2V4zM9 4h6v2H9V4zm10 16H5V10h14v10zm-7-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm0 4a1 1 0 110-2 1 1 0 010 2z"/>
-                        </svg>
+                        {% from 'src/templates/partials/ui/icon.njk' import icon %}
+                        {{ icon("icon-shopping-bag") }}
                     </button>
                 </div>
             </div>

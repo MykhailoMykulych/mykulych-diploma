@@ -8,9 +8,9 @@ body {
     font-family: var(--font-primary);
     background-color: var(--bg-base);
     user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Safari */
+    user-select: none; /* Firefox */
+    user-select: none; /* Internet Explorer/Edge */
 }
 
 .main {
@@ -37,4 +37,9 @@ a {
 
 ul {
     list-style: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
 }
