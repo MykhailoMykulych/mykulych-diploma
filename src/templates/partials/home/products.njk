@@ -1,14 +1,7 @@
-<section class="section section--products">
-    <div class="section__wrapper">
-        <div class="section__content">
+{% from "../product.njk" import productCard %}
+<div class="products">
+    {% for item in products %}
+    {{ productCard(item.image, item.alt, item.text) }}
+    {% endfor %}
+</div>
 
-            {% from "../product.njk" import productCard %}
-            <div class="products">
-                {% for item in products %}
-                {{ productCard(item.image, item.alt, item.text) }}
-                {% endfor %}
-            </div>
-       
-        </div>
-    </div>
-</section>    
