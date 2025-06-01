@@ -1,12 +1,18 @@
 {% extends 'src/templates/layouts/base.njk' %}
 
 {% block content %}
-<section class="wrapper">
+<section class="wrapper blok">
     <h1 class="heading-h1">{{ index.title }}</h1>
     <h2 class="heading-h2">{{ index.title }}</h2>
     <h3 class="heading-h3">{{ index.title }}</h3>
     <h4 class="heading-h4">{{ index.title }}</h4>
     <h5 class="heading-h5">{{ catalog.title }}</h5>
+
+    <div class="labels">
+        <span class="label label--new">New</span>
+        <span class="label label--popular">Popular</span>
+        <span class="label label--soldout">Soldout</span>
+    </div>
 
     <div class="buttons">
         <button class="button button--primary button--lg">Primary</Button>

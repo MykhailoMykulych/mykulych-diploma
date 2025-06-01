@@ -6,6 +6,7 @@
 @use "ui/button";
 @use "ui/inputs";
 @use "ui/links";
+@use "ui/labels";
 
 // ======= Main Sections =====
 @use "sections";
@@ -21,6 +22,15 @@
 @use "home/pricing";
 @use "home/faq";
 @use "home/blog-section";
+
+// ======= Catalog ============
+// @use "catalog/catalog";
+// @use "catalog/filter";
+
+// ======= Blog ============
+@use "blog/blog";
+@use "blog/sidebar";
+@use "blog/article";
 
 // ======= Footer ============
 @use "footer/footer";

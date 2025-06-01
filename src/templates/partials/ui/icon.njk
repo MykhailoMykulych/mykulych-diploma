@@ -2,6 +2,13 @@
 {% from 'src/templates/partials/ui/icon.njk' import icon %}
 {{ icon("icon-chevron-left") }} 
 #}
+{# 
+
+{% for category in categories %}
+ 
+{% endfor %} #}
+
+
 {% macro icon(type) %}
 <svg class="icon">
     <use href="/src/assets/sprite.svg#{{ type }}"/>

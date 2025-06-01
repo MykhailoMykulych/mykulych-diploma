@@ -1,16 +1,18 @@
-@use "../mixins" as *;
-@use "variables" as *;
+@use '../mixins' as *;
+@use 'variables' as *;
 
 .link {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 4px;
+
+    // padding: 4px;
     border: 2px solid transparent;
     border-radius: 5px;
     outline-offset: 0;
     font-weight: 600;
     letter-spacing: 0;
+    transition: color var(--tran-duration);
 
     &:hover {
         color: var(--marina-600);
@@ -24,6 +26,7 @@
 
     &--dark {
         @include link-l1;
+
         color: var(--color-primary);
 
         &:focus {
@@ -47,7 +50,6 @@
     &--large {
         @include link-l2;
     }
-
 }
 
 //  ============ Text field  ============
@@ -55,6 +57,7 @@
     border: 1px solid var(--seporator-bold);
     padding: 10px 12px;
     border-radius: 8px;
+
     @include text-p3-regular;
 
     &:hover {

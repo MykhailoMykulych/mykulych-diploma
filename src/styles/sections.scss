@@ -1,17 +1,13 @@
-@use "ui/brakepoints" as *;
-@use "mixins" as *;
+@use 'ui/brakepoints' as *;
+@use 'mixins' as *;
 
 .section {
     &--main-banner {
         background: linear-gradient(
             90deg,
-            rgba(240, 246, 253, 1) 44%,
-            rgba(255, 255, 255, 1) 100%
+            rgb(240 246 253 / 1) 44%,
+            rgb(255 255 255 / 1) 100%
         );
-    }
-
-    &--products {
-       
     }
 
     &__content {
@@ -20,6 +16,7 @@
         max-width: 1440px;
         padding-inline: 16px;
         background-color: var(--bg-base);
+
         @include md {
             padding-inline: 40px;
         }
@@ -28,5 +25,4 @@
             padding-inline: 80px;
         }
     }
-
 }

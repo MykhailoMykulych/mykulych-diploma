@@ -20,25 +20,25 @@
         outline-offset: 2px;
     }
 
-    &:active {
-        background-color: var(--color-secondary);
-        outline: none;
-
-        &:after {
-            background-color: var(--bg-alternative2-invert);
-        }
-    }
-
-    &:after {
-        content: "";
+    &::after {
+        content: '';
         position: absolute;
         top: 2px;
         left: 2px;
         width: 16px;
         height: 16px;
-        background: #ffff;
+        background: #ffffffff;
         border-radius: 50%;
         transition: 0.3s;
+    }
+
+    &:active {
+        background-color: var(--color-secondary);
+        outline: none;
+
+        &::after {
+            background-color: var(--bg-alternative2-invert);
+        }
     }
 
     &:checked {
@@ -53,18 +53,19 @@
             outline-offset: 2px;
         }
 
+        &::after {
+            left: calc(100% - 2px);
+            transform: translateX(-100%);
+        }
+
         &:active {
             background-color: var(--marina-600);
 
-            &:after {
+            &::after {
                 background-color: var(--fixed-baseWhite);
             }
         }
 
-        &:after {
-            left: calc(100% - 2px);
-            transform: translateX(-100%);
-        }
     }
 }
 
@@ -80,6 +81,7 @@
     transition: background-color 0.2s ease-in-out;
     position: relative;
 }
+
 .default-radio {
     width: 0;
     height: 0;
@@ -105,22 +107,25 @@
         }
     }
 
-    //---- when checked ----
+    // ---- when checked ----
     &:checked {
         & + .custom-radio {
             border: 5px solid var(--line);
         }
+
         &:active {
             & + .custom-radio {
                 border: 5px solid var(--marina-800);
             }
         }
+
         &:focus {
             & + .custom-radio {
                 border: 5px solid var(--marina-600);
             }
         }
     }
+
     // ---------------------
 }
 
@@ -131,6 +136,7 @@
     align-items: center;
     gap: 10px;
 }
+
 // ------------------------
 
 .custom-checkbox {
@@ -174,11 +180,28 @@
     // ---- when checked -----
     &:checked {
         & + .custom-checkbox {
-            background-image: url(/assets/images/mark-blue.svg);
+            background-image: url('/src/assets/images/mark-white.svg');
             background-size: 8px auto;
+            background-size: contain;
             background-repeat: no-repeat;
+            background-position: center;
             background-color: var(--marina-800);
             border: 2px solid var(--marina-800);
+        }
+
+        &:hover {
+            & + .custom-checkbox {
+                background-color: var(--marina-600);
+                border: 2px solid var(--marina-600);
+            }
+        }
+
+        &:active {
+            & + .custom-checkbox {
+                background-image: url('/src/assets/images/mark-blue.svg');
+                background-color: var(--marina-200);
+                border: 2px solid var(--marina-200);
+            }
         }
     }
 }

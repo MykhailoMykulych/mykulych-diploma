@@ -3,9 +3,9 @@
 
 .footer {
     width: 100%;
+    padding-top: 120px;
 
     &__wrapper {
-
         &--bottom {
         background-color: var(--fixed-base);
     }
@@ -54,6 +54,7 @@
 
     &__description {
         @include text-p2-regular;
+
         @include md {
             max-width: 320px;
         }
@@ -73,23 +74,18 @@
         }
     }
 
-    &__column {
-    }
-
     &__title {
         @include heading-h5;
     }
 
     &__list {
         @include text-p2-regular;
+
         margin-top: 16px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
-    }
-
-    &__item {
     }
 
     &__link {
@@ -168,6 +164,7 @@
 
     &__legal {
         @include text-p2-regular;
+
         display: flex;
         align-items: center;
         gap: 21px;

@@ -158,6 +158,10 @@
         @include heading-h1;
     }
 
+    &__link {
+        color: var(--accent-link);
+    }
+
     &__subtitle {
         @include subheader-s5;
 

@@ -56,21 +56,17 @@
 
             <div class="footer__newsletter">
                 <div class="footer__social">
-                    <a
-                        href="#"
-                        class="button button--secondary button--lg"
-                        aria-label="Twitter"
-                    >1</a>
-                    <a
-                        href="#"
-                        class="button button--secondary button--lg"
-                        aria-label="Facebook"
-                    >1</a>
-                    <a
-                        href="#"
-                        class="button button--secondary button--lg"
-                        aria-label="Telegram"
-                    >1</a>
+                    {% from 'src/templates/partials/ui/icon.njk' import icon %} 
+                    <a  href="#" class="button button--secondary button--lg" aria-label="Twitter">  
+                        {{ icon("icon-play") }} 
+                    </a>
+                    <a href="#" class="button button--secondary button--lg" aria-label="Facebook">
+                        {{ icon("icon-play") }} 
+                    </a>
+
+                     <a href="#" class="button button--secondary button--lg" aria-label="Telegram">
+                        {{ icon("icon-play") }} 
+                    </a>
                 </div>
 
                 <form class="footer__form">

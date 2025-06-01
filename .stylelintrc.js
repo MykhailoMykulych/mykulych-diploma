@@ -22,7 +22,7 @@ export default {
         'alpha-value-notation': 'number',
         'color-hex-length': 'long',
         'color-named': 'never',
-        'color-hex-alpha': 'never',
+        // 'color-hex-alpha': 'never',
         'font-weight-notation': 'numeric',
         'selector-max-universal': 1,
         'declaration-block-no-redundant-longhand-properties': null,
