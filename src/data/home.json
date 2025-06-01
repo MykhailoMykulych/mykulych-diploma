@@ -30,5 +30,30 @@
       "text": "Illustration",
       "alt": "Illustration"
     }
-  ]
+  ],
+
+  "articles": [
+  {
+    "image": "laurent",
+    "alt": "Best Dishes",
+    "title": "Best Dishes",
+    "date": "15 April 2024",
+    "tag": "Tag"
+  },
+  {
+    "image": "laurent",
+    "alt": "Contact Us Lotus Spa",
+    "title": "Contact Us Lotus Spa",
+    "date": "5 May 2024",
+    "tag": "Tag"
+  },
+  {
+    "image": "Thumb",
+    "alt": "Creative Blog",
+    "title": "Creative Blog",
+    "date": "20 June 2024",
+    "tag": "Tag"
+  }
+]
+
 }
