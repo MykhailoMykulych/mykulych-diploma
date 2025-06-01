@@ -1,0 +1,28 @@
+@use '../mixins' as *;
+@use '../ui/brakepoints' as *;
+
+.banner {
+    &__content {
+        padding-block: 64px;
+    }
+
+    &__title {
+        padding-top: 24px;
+
+        @include heading-h2;
+
+        @include md {
+            @include heading-h1;
+        }
+    }
+
+    &__illustration {
+        padding-bottom: 48px;
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+}
