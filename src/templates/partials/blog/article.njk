@@ -14,10 +14,8 @@
     </section>
 
     <div class="article__illustration">
-        <picture>
-            <source media="(min-width: 1024px)" srcset="/src/assets/images/fonts-desk.png?format=webp" type="image/webp" />
-            <img class="article__image" src="/src/assets/images/fonts-desk.png" alt="Creative Blog" loading="lazy" />
-        </picture>
+        {% from 'src/templates/partials/ui/icon.njk' import picture %}
+        {{ picture("article__image", "fonts-desk", "Desk with many fonts") }}
         <div class="article__info">
             <p class="article__info-description">Example of font usage in typography.</p>
             <a href="#" class="article__info-link link">Get this asset</a>

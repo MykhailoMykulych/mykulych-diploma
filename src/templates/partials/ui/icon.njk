@@ -3,19 +3,15 @@
     <use href="/src/assets/sprite.svg#{{ type }}"/>
 </svg>
 {% endmacro %}
-
 {# {% from 'src/templates/partials/ui/icon.njk' import icon %}
 {{ icon("icon-chevron-left") }} #}
 
 
-{% macro picture(type, alt, class) %}
-
-<picture class="{{ class }}">
-    <source srcset="/src/assets/images/{{ type }}.png?format=webp" type="image/webp" />
-    <img src="/src/assets/images/{{ type }}.png" alt="{{ alt }}" loading="lazy" />
+{% macro picture(class, src, alt) %}
+<picture>
+    <source srcset="/src/assets/images/{{ src }}.png?format=webp" type="image/webp" />
+    <img class="{{ class }}" src="/src/assets/images/{{ src }}.png" alt="{{ alt }}" loading="lazy" />
 </picture>
-
 {% endmacro %}
-
 {# {% from 'src/templates/partials/ui/icon.njk' import picture %}
-{{ picture("binabox", "Alt", "blog-section__image") }} #}
+{{ picture("class", "src", "Alt") }} #}

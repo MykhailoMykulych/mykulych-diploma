@@ -1,9 +1,15 @@
 @use '../mixins' as *;
+@use "../ui/brakepoints" as *;
 
 .sidebar {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: 100%;
+
+    @include md {
+        max-width: 260px;
+    }
 
     &__author {
         display: flex;
