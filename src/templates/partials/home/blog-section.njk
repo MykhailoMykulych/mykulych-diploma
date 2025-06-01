@@ -9,19 +9,8 @@
   <div class="blog-section__container">
 
     <div class="blog-section__item">
-        <picture class="blog-section__image">
-            <!-- Desktop WebP через параметр -->
-            {# <source media="(min-width: 1024px)" srcset="/src/assets/images/binabox-desk.png?format=webp" type="image/webp" /> #}
-            
-            <!-- Mobile WebP через параметр -->
-            <source srcset="/src/assets/images/binabox-mob.png?format=webp" type="image/webp" />
-            
-            <!-- Desktop обычный PNG -->
-            {# <source media="(min-width: 1024px)" srcset="/src/assets/images/binabox-desk.png" type="image/png" /> #}
-            
-            <!-- Mobile обычный PNG -->
-            <img src="/src/assets/images/binabox-mob.png" alt="Creative Blog" loading="lazy" />
-        </picture>
+        {% from 'src/templates/partials/ui/icon.njk' import picture %}
+        {{ picture("binabox", "Binabox website", "blog-section__image") }}
         <div class="blog-section__text">
             <h3 class="blog-section__title">Creative Blog</h3>
             <time class="blog-section__date" datetime="2024-04-15">15 April 2024</time>
@@ -29,19 +18,7 @@
     </div>
 
     <div class="blog-section__item">
-        <picture class="blog-section__image">
-            <!-- Desktop WebP через параметр -->
-            <source media="(min-width: 1024px)" srcset="/src/assets/images/binabox-desk.png?format=webp" type="image/webp" />
-            
-            <!-- Mobile WebP через параметр -->
-            <source srcset="/src/assets/images/binabox-mob.png?format=webp" type="image/webp" />
-            
-            <!-- Desktop обычный PNG -->
-            <source media="(min-width: 1024px)" srcset="/src/assets/images/binabox-desk.png" type="image/png" />
-            
-            <!-- Mobile обычный PNG -->
-            <img src="/src/assets/images/binabox-mob.png" alt="Creative Blog" loading="lazy" />
-        </picture>
+        {{ picture("dishes", "Best dishes website", "blog-section__image") }}
         <div class="blog-section__text">
             <h3 class="blog-section__title">Best Dishes</h3>
             <time class="blog-section__date" datetime="2024-05-05">5 May 2024</time>
