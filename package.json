@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "vite dev",
+    "start": "npx forever --no-daemon --plain -c \"npm run dev\" .",
+    "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
     "prettier": "npx prettier '**/*.njk'",
