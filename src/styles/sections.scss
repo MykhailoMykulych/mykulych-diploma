@@ -10,12 +10,36 @@
         );
     }
 
+    &--faq {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1440px;
+
+        @include md {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 32%;
+                right: 0;
+                width: 689px;
+                height: 498px;
+                background-color: rgb(15 115 246 / 0.1);
+                filter: blur(200px);
+                z-index: -1;
+
+                @include lg {
+                    right: 30%;
+                }
+            }
+        }
+    }
+
     &__content {
         margin: 0 auto;
         width: 100%;
         max-width: 1440px;
         padding-inline: 16px;
-        background-color: var(--bg-base);
 
         @include md {
             padding-inline: 40px;
