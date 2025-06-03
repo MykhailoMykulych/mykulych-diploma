@@ -1,59 +1,34 @@
-{   
-   "banner_title1": "Craft Your Success with Our",
-   "banner_title_link": "Digital",
-   "banner_title2": "Assets",
-   "banner_text": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+{
+    "banner_title1": "Craft Your Success with Our",
+    "banner_title_link": "Digital",
+    "banner_title2": "Assets",
+    "banner_text": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
 
     "products": [
-    {
-      "image": "../../assets/images/ui-kits.svg",
-      "text": "UI Kits",
-      "alt": "UI Kits"
-    },
-    {
-      "image": "../../assets/images/social-media.svg",
-      "text": "Social Media",
-      "alt": "Social Media"
-    },
-    {
-      "image": "../../assets/images/presentation.svg",
-      "text": "Presentation",
-      "alt": "Presentation"
-    },
-    {
-      "image": "../../assets/images/fonts.svg",
-      "text": "Fonts",
-      "alt": "Fonts"
-    },
-    {
-      "image": "../../assets/images/illustration.svg",
-      "text": "Illustration",
-      "alt": "Illustration"
-    }
-  ],
-
-  "articles": [
-  {
-    "image": "laurent",
-    "alt": "Best Dishes",
-    "title": "Best Dishes",
-    "date": "15 April 2024",
-    "tag": "Tag"
-  },
-  {
-    "image": "laurent",
-    "alt": "Contact Us Lotus Spa",
-    "title": "Contact Us Lotus Spa",
-    "date": "5 May 2024",
-    "tag": "Tag"
-  },
-  {
-    "image": "Thumb",
-    "alt": "Creative Blog",
-    "title": "Creative Blog",
-    "date": "20 June 2024",
-    "tag": "Tag"
-  }
-]
-
+        {
+            "image": "../../assets/images/ui-kits.svg",
+            "text": "UI Kits",
+            "alt": "UI Kits"
+        },
+        {
+            "image": "../../assets/images/social-media.svg",
+            "text": "Social Media",
+            "alt": "Social Media"
+        },
+        {
+            "image": "../../assets/images/presentation.svg",
+            "text": "Presentation",
+            "alt": "Presentation"
+        },
+        {
+            "image": "../../assets/images/fonts.svg",
+            "text": "Fonts",
+            "alt": "Fonts"
+        },
+        {
+            "image": "../../assets/images/illustration.svg",
+            "text": "Illustration",
+            "alt": "Illustration"
+        }
+    ]
 }
