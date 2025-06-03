@@ -3,6 +3,7 @@
     "banner_title_link": "Digital",
     "banner_title2": "Assets",
     "banner_text": "From our inspiring illustrations to dynamic UI/UX kits, elevate your projects with our premium digital design resources.",
+    "g_watch": "Watch About Us",
 
     "products": [
         {
@@ -29,6 +30,45 @@
             "image": "../../assets/images/illustration.svg",
             "text": "Illustration",
             "alt": "Illustration"
+        }
+    ],
+
+    "g_trending": "Trending",
+    "g_popular_products": "Popular Products",
+    "g_go": "Go to product",
+
+    "items": [
+        {
+            "image": "/src/assets/images/travel-hero.png",
+            "title": "Travel Hero",
+            "meta": "Adventure • Journey",
+            "price": "€29.99",
+            "badge": "/src/assets/images/label-badge.svg"
+        },
+        {
+            "image": "/src/assets/images/real-estate.png",
+            "title": "Healthcare Pro",
+            "meta": "Medical • Wellness",
+            "price": "€15.99",
+            "badge": "/src/assets/images/label-badge.svg"
+        },
+        {
+            "image": "/src/assets/images/foodish-delight.png",
+            "title": "Foodish Delight",
+            "meta": "Catering • Food",
+            "price": "€31.99"
+        },
+        {
+            "image": "/src/assets/images/real-estate.png",
+            "title": "Real Estate",
+            "meta": "Modern • Homes",
+            "price": "€40.99"
+        },
+        {
+            "image": "/src/assets/images/travel-hero.png",
+            "title": "Travel Hero",
+            "meta": "Adventure • Journey",
+            "price": "€29.99"
         }
     ]
 }
