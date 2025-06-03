@@ -139,5 +139,24 @@
             "question": "Can I sell my digital products on this marketplace?",
             "answer": "Yes, you can apply to become a seller. Check out the 'Sell With Us' page for details."
         }
+    ],
+
+    "g_latest": "Latest Expert",
+    "g_explore": "Explore All Articles",
+    "blogPosts": [
+        {
+            "image": "binabox",
+            "alt": "Binabox website",
+            "title": "Creative Blog",
+            "date": "2024-04-15",
+            "dateDisplay": "15 April 2024"
+        },
+        {
+            "image": "dishes",
+            "alt": "Best dishes website",
+            "title": "Best Dishes",
+            "date": "2024-05-05",
+            "dateDisplay": "5 May 2024"
+        }
     ]
 }
