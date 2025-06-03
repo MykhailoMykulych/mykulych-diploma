@@ -36,7 +36,6 @@
     "g_trending": "Trending",
     "g_popular_products": "Popular Products",
     "g_go": "Go to product",
-
     "items": [
         {
             "image": "/src/assets/images/travel-hero.png",
@@ -69,6 +68,33 @@
             "title": "Travel Hero",
             "meta": "Adventure • Journey",
             "price": "€29.99"
+        }
+    ],
+
+    "g_faq": "F.A.Q",
+    "g_answer": "Answers to Your Questions",
+    "button_ask": "Ask Us A Question",
+    "faqItems": [
+        {
+            "question": "Can I request a refund?",
+            "answer": "Refund policies vary. Please check the specific terms associated with your purchase."
+        },
+        {
+            "question": "How do I access my purchased products?",
+            "answer": "Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.",
+            "open": true
+        },
+        {
+            "question": "Are there any discounts for bulk purchases?",
+            "answer": "Yes, we offer special discounts for bulk purchases. Contact our sales team for more information."
+        },
+        {
+            "question": "What payment methods do you accept here?",
+            "answer": "We accept credit cards, PayPal, and other popular payment methods."
+        },
+        {
+            "question": "Can I sell my digital products on this marketplace?",
+            "answer": "Yes, you can apply to become a seller. Check out the 'Sell With Us' page for details."
         }
     ]
 }

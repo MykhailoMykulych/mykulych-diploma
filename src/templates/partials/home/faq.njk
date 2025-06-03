@@ -1,51 +1,21 @@
 <div class="faq">
 
     <div class="faq__heading">
-        <span class="faq__tag">F.A.Q</span>
-        <h2 class="faq__title heading-h2">Answers to Your Questions</h2>
-        <button class="faq__button button button--secondary button--lg">Ask Us A Question</button>
+        <span class="faq__tag">{{ g_faq }}</span>
+        <h2 class="faq__title heading-h2">{{ g_answer }}</h2>
+        <button class="faq__button button button--secondary button--lg">{{ button_ask }}</button>
     </div>
 
     <div class="faq__accordion">
 
-    
-        <details class="faq__item">
-            <summary class="faq__question">Can I request a refund?</summary>
-            <p class="faq__answer">
-            Refund policies vary. Please check the specific terms associated with your purchase.
-            </p>
+        {% for item in faqItems %}
+        <details class="faq__item" {% if item.open %}open{% endif %}>
+            <summary class="faq__question">{{ item.question }}</summary>
+            <p class="faq__answer">{{ item.answer }}</p>
         </details>
-
-        <details class="faq__item" open>
-            <summary class="faq__question">How do I access my purchased products?</summary>
-            <p class="faq__answer">
-                Accessing your purchased products is seamless and hassle-free on our digital design assets marketplace. Simply log in to your account, navigate to the 'My Purchases' section, and you'll find all your purchased products ready for download.
-            </p>
-        </details>
-
-        <details class="faq__item">
-            <summary class="faq__question">Are there any discounts for bulk purchases?</summary>
-            <p class="faq__answer">
-                Yes, we offer special discounts for bulk purchases. Contact our sales team for more information.
-            </p>
-        </details>
-
-        <details class="faq__item">
-            <summary class="faq__question">What payment methods do you accept here?</summary>
-            <p class="faq__answer">
-                We accept credit cards, PayPal, and other popular payment methods.
-            </p>
-        </details>
-
-        <details class="faq__item">
-            <summary class="faq__question">Can I sell my digital products on this marketplace?</summary>
-            <p class="faq__answer">
-                Yes, you can apply to become a seller. Check out the 'Sell With Us' page for details.
-            </p>
-        </details>
+        {% endfor %}
 
     </div>
 
 
-    
 </div>
