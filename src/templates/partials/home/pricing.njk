@@ -1,75 +1,42 @@
 <div class="pricing">
 
     <div class="pricing__heading">
-        <span class="pricing__tag">Pricing Plan</span>
-        <h2 class="pricing__title heading-h2">Choose The Perfect Plan for Creative Potential</h2>
+        <span class="pricing__tag">{{ g_pricing_plan }}</span>
+        <h2 class="pricing__title heading-h2">{{ g_choose }}</h2>
     </div>
 
     <div class="pricing__cards">
+    {% for plan in plans %}
 
-        <div class="pricing__card">
+        <div class="pricing__card{% if plan.bestseller %} pricing__card--bestseller{% endif %}">
+            
+            {% if plan.badge %}
+                <span class="pricing__badge">{{ plan.badge }}</span>
+            {% endif %}
 
             <div class="pricing__offer">
-                <p class="pricing__offer-title">Standard Membership</p>
-                <p class="pricing__offer-price">€14.99
-                    <span class="pricing__offer-duration">/ Month</span>
+                <p class="pricing__offer-title">{{ plan.title }}</p>
+                <p class="pricing__offer-price">
+                    {{ plan.price }}
+                    <span class="pricing__offer-duration">{{ plan.duration }}</span>
                 </p>
             </div>
-            
+
             <div class="pricing__features">
                 <ul class="pricing__plate">
-                    <li class="pricing__plate-item">Enhanced Resource Access</li>
-                    <li class="pricing__plate-item">Monthly Credits</li>
-                    <li class="pricing__plate-item">Priority Customer Support</li>
-                    <li class="pricing__plate-item">Community Features Access</li>
+                    {% for feature in plan.features %}
+                        <li class="pricing__plate-item">{{ feature }}</li>
+                    {% endfor %}
                 </ul>
-                <button class="pricing__button button button--secondary button--lg">Subscribe</button>
-            </div>
 
+                <button class="pricing__button button{% if plan.bestseller %} pricing__button--bestseller button--primary{% else %} button--secondary{% endif %} button--lg">
+                    {{ button_subscribe }}
+                </button>
+            </div>
         </div>
 
-        <div class="pricing__card pricing__card--bestseller">
-
-            <div class="pricing__offer">
-                <p class="pricing__offer-title">Standard Membership</p>
-                <p class="pricing__offer-price">€14.99
-                    <span class="pricing__offer-duration">/ Month</span>
-                </p>
-            </div>
-            
-            <div class="pricing__features">
-                <ul class="pricing__plate">
-                    <li class="pricing__plate-item">Enhanced Resource Access</li>
-                    <li class="pricing__plate-item">Monthly Credits</li>
-                    <li class="pricing__plate-item">Priority Customer Support</li>
-                    <li class="pricing__plate-item">Community Features Access</li>
-                </ul>
-                <button class="pricing__button pricing__button--bestseller button button--secondary button--lg">Subscribe</button>
-            </div>
-
-        </div>
-
-        <div class="pricing__card">
-
-            <div class="pricing__offer">
-                <p class="pricing__offer-title">Standard Membership</p>
-                <p class="pricing__offer-price">€14.99
-                    <span class="pricing__offer-duration">/ Month</span>
-                </p>
-            </div>
-            
-            <div class="pricing__features">
-                <ul class="pricing__plate">
-                    <li class="pricing__plate-item">Enhanced Resource Access</li>
-                    <li class="pricing__plate-item">Monthly Credits</li>
-                    <li class="pricing__plate-item">Priority Customer Support</li>
-                    <li class="pricing__plate-item">Community Features Access</li>
-                </ul>
-                <button class="pricing__button button button--secondary button--lg">Subscribe</button>
-            </div>
-
-        </div>
-
+    {% endfor %}
     </div>
+
 
 </div>

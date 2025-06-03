@@ -53,6 +53,7 @@
         width: 100%;
         max-width: 440px;
         cursor: pointer;
+        position: relative;
 
         &--bestseller {
             border: 2px solid var(--marina-800);
@@ -61,6 +62,20 @@
                 transform: translateY(-7%);
             }
         }
+    }
+
+    &__badge {
+        background-color: var(--marina-800);
+        color: var(--bg-base);
+        padding: 7px 24px;
+
+        @include heading-h5;
+
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        border-bottom-left-radius: 24px;
+        border-top-right-radius: 24px;
     }
 
     &__offer {

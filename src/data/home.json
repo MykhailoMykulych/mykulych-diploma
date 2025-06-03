@@ -71,6 +71,49 @@
         }
     ],
 
+    "g_pricing_plan": "Pricing Plan",
+    "g_choose": "Choose The Perfect Plan for Creative Potential",
+    "button_subscribe": "Subscribe",
+    "plans": [
+        {
+            "title": "Standard Membership",
+            "price": "€14.99",
+            "duration": "/ Month",
+            "features": [
+                "Enhanced Resource Access",
+                "Monthly Credits",
+                "Priority Customer Support",
+                "Community Features Access"
+            ],
+            "bestseller": false
+        },
+        {
+            "title": "Plus Membership",
+            "price": "€29.99",
+            "duration": "/ Month",
+            "features": [
+                "All Standard Benefits",
+                "Increased Monthly Credits",
+                "Early Access to New Releases",
+                "Member-Only Offers"
+            ],
+            "bestseller": true,
+            "badge": "BEST SELLER"
+        },
+        {
+            "title": "Pro Membership",
+            "price": "€49.99",
+            "duration": "/ Month",
+            "features": [
+                "All Plus Benefits",
+                "Unlimited Downloads",
+                "Custom Licensing",
+                "Direct Creator Collaboration"
+            ],
+            "bestseller": false
+        }
+    ],
+
     "g_faq": "F.A.Q",
     "g_answer": "Answers to Your Questions",
     "button_ask": "Ask Us A Question",
