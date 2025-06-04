@@ -19,5 +19,23 @@
             {% block content %}  default content  {% endblock %}
         </main>
         {% include "src/templates/partials/common/footer.njk" %}
+
+
+        {#  #}
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const filterToggleButton = document.querySelector(".catalog-controls__filter-toggle");
+                const filterOpener = document.querySelector(".filter-opener");
+                const filterCloseButton = document.querySelector(".filter-opener_button");
+
+                filterToggleButton.addEventListener("click", function () {
+                    filterOpener.classList.toggle("active");
+                });
+
+                filterCloseButton.addEventListener("click", function () {
+                    filterOpener.classList.remove("active");
+                });
+            });
+        </script>
     </body>
 </html>
