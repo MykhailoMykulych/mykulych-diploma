@@ -11,7 +11,10 @@
             <button class="catalog-controls__filter-toggle button button--primary button--icon-md">
                 {{ icon("icon-filter-lines", "icon--white") }}
             </button>
-            
+
+            {# Mobile Filter for up to lg brakepoint #}
+            {% include 'src/templates/partials/catalog/filter-opener.njk' %}
+            {# For desktop - simple aside block with filter #}
         </div>
 
         <div class="catalog-controls__sort-group">
@@ -39,6 +42,6 @@
         </button>
     </div>
 
-    {% include 'src/templates/partials/catalog/filter-opener.njk' %}
+   
 
 </div>

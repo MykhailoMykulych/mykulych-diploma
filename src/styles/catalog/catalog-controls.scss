@@ -21,7 +21,12 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        justify-content: space-between;
         width: 100%;
+
+        @include md {
+            justify-content: flex-start;
+        }
     }
 
     &__filter-toggle {
