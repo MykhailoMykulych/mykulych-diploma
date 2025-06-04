@@ -1,4 +1,2 @@
-.catalog {
-    display: flex;
-    gap: 24px;
-}
+@use '../mixins' as *;
+@use '../ui/brakepoints' as *;

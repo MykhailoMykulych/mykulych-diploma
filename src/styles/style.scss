@@ -24,7 +24,9 @@
 @use "home/blog-section";
 
 // ======= Catalog ============
-// @use "catalog/catalog";
+@use "catalog/catalog";
+@use "catalog/catalog-controls";
+@use "catalog/filter-opener";
 @use "catalog/filter";
 
 // ======= Blog ============

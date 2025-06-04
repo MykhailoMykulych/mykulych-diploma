@@ -206,7 +206,8 @@
 @mixin show-element {
     width: auto;
     height: auto;
-    position: static;
+
+    // position: static;
     visibility: visible;
     opacity: 1;
 }

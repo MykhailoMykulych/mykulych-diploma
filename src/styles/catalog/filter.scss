@@ -1,12 +1,38 @@
-// .filter {
-//     display: flex;
-//     flex-direction: column;
-//     gap: 40px;
+@use '../mixins' as *;
+@use '../ui/brakepoints' as *;
 
-//     &__section {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 24px;
-//     }
-// }
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: rgb(220 223 214);
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title {
+        @include heading-h4;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    &__price-labels {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 

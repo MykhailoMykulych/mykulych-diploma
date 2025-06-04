@@ -1,0 +1,38 @@
+@use '../mixins' as *;
+@use '../ui/brakepoints' as *;
+
+.catalog-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__filter-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__sort-group {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__view-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}

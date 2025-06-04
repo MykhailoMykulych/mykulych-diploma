@@ -1,0 +1,44 @@
+<div class="catalog-controls">
+    {% from 'src/templates/partials/ui/icon.njk' import icon %}
+
+    <div class="catalog-controls__top">
+
+        <div class="catalog-controls__filter-group">
+            <button class="catalog-controls__filter-button button button--secondary button--md">
+                Best Seller
+                {{ icon("icon-chevron-down") }}
+            </button>
+            <button class="catalog-controls__filter-toggle button button--primary button--icon-md">
+                {{ icon("icon-filter-lines", "icon--white") }}
+            </button>
+            
+        </div>
+
+        <div class="catalog-controls__sort-group">
+            <span class="catalog-controls__results">Showing 12 out of 120 results.</span>
+            <div class="catalog-controls__view-toggle">
+                <button class="catalog-controls__view-button button button--primary button--icon-md">
+                    {{ icon("icon-grid", "icon--white") }}
+                </button>
+                <button class="catalog-controls__view-button button button--secondary button--icon-md">
+                    {{ icon("icon-list") }}
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="catalog-controls__tags">
+        <button class="catalog-controls__tag button button--secondary button--sm">
+            UI Kit
+            {{ icon("icon-x-close") }}
+        </button>
+        <button class="catalog-controls__tag button button--secondary button--sm">
+            UI Kit
+            {{ icon("icon-x-close") }}
+        </button>
+    </div>
+
+    {% include 'src/templates/partials/catalog/filter-opener.njk' %}
+
+</div>

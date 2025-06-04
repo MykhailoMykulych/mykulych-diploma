@@ -1,4 +1,10 @@
-{# <aside class="filter">
+<filter class="filter">
+
+    <button class="filter__button button button--secondary button--md">
+        {% from 'src/templates/partials/ui/icon.njk' import icon %}
+        {{ icon("icon-x-close") }}
+        Clear all filters
+    </button>
 
     <div class="filter__section">
         <h3 class="filter__title">Categories</h3>
@@ -71,30 +77,35 @@
                 <label class="filter__list-option">
                     <input type="radio" class="default-radio" name="gender">
                     <span class="custom-radio"></span>
+                    Figma
                 </label>
             </li>
             <li class="filter__list-item">
                 <label class="filter__list-option">
                     <input type="radio" class="default-radio" name="gender">
                     <span class="custom-radio"></span>
+                    Figma
                 </label>
             </li>
             <li class="filter__list-item">
                 <label class="filter__list-option">
                     <input type="radio" class="default-radio" name="gender">
                     <span class="custom-radio"></span>
+                    Figma
                 </label>
             </li>
             <li class="filter__list-item">
                 <label class="filter__list-option">
                     <input type="radio" class="default-radio" name="gender">
                     <span class="custom-radio"></span>
+                    Figma
                 </label>
             </li>
             <li class="filter__list-item">
                 <label class="filter__list-option">
                     <input type="radio" class="default-radio" name="gender">
                     <span class="custom-radio"></span>
+                    Figma
                 </label>
             </li>
         </ul>
@@ -151,118 +162,7 @@
         </div>
     </div>
 
-    <button class="filter__button button button--secondary button--lg">
-        Clear all filters
-    </button>
-
-</aside> #}
-
-{# <div class="catalog__filter">
-    {% from 'src/templates/partials/ui/icon.njk' import icon %}
-    <button class="catalog__button button button--secondary button--md">
-        Best Seller
-        {{ icon("icon-chevron-down") }}
-    </button>
-    <input type="checkbox">
-    <span>Showing 12 out of 120 results.</span>
-    <button class="catalog__button button button--primary button--icon-md">
-        {{ icon("icon-grid", "icon--white") }}
-    </button>
-    <button class="catalog__button button button--secondary button--icon-md">
-        {{ icon("icon-list") }}
-    </button>
-    <button class="catalog__button button button--secondary button--sm">
-        UI Kit
-        {{ icon("icon-x-close") }}
-    </button>
-    <button class="catalog__button button button--secondary button--sm">
-        UI Kit
-        {{ icon("icon-x-close") }}
-    </button>
-    
-</div> #}
-
-{# <div class="catalog__filter">
-    {% from 'src/templates/partials/ui/icon.njk' import icon %}
-
-    <div class="catalog__controls">
-
-        <div class="catalog__filter">
-            <button class="catalog__button button button--secondary button--md">
-                Best Seller
-                {{ icon("icon-chevron-down") }}
-            </button>
-            <label for="filter-toggle" class="catalog__button button button--primary button--icon-md">
-                {{ icon("icon-filter-lines", "icon--white") }}
-            </label>
-        </div>
-
-        <div class="catalog__sort">
-            <span class="catalog__filter-results">Showing 12 out of 120 results.</span>
-            <button class="catalog__button button button--primary button--icon-md">
-                {{ icon("icon-grid", "icon--white") }}
-            </button>
-            <button class="catalog__button button button--secondary button--icon-md">
-                {{ icon("icon-list") }}
-            </button>
-        </div>
-
-    </div>
-
-    <div class="catalog__tags">
-        <button class="catalog__tag button button--secondary button--sm">
-            UI Kit
-            {{ icon("icon-x-close") }}
-        </button>
-        <button class="catalog__tag button button--secondary button--sm">
-            UI Kit
-            {{ icon("icon-x-close") }}
-        </button>
-
-    </div>
-
-</div> #}
-
-{# Filter for Mobile and Tablet (Brakepoints sm and md) #}
-<div class="catalog-filter">
-    {% from 'src/templates/partials/ui/icon.njk' import icon %}
-
-    <div class="catalog-filter__controls">
-
-        <div class="catalog-filter__filter-group">
-            <button class="catalog-filter__filter-button button button--secondary button--md">
-                Best Seller
-                {{ icon("icon-chevron-down") }}
-            </button>
-            <label for="filter-toggle" class="catalog-filter__filter-toggle button button--primary button--icon-md">
-                {{ icon("icon-filter-lines", "icon--white") }}
-            </label>
-        </div>
-
-        <div class="catalog-filter__sort-group">
-            <span class="catalog-filter__results">Showing 12 out of 120 results.</span>
-            <button class="catalog-filter__sort-button button button--primary button--icon-md">
-                {{ icon("icon-grid", "icon--white") }}
-            </button>
-            <button class="catalog-filter__sort-button button button--secondary button--icon-md">
-                {{ icon("icon-list") }}
-            </button>
-        </div>
-
-    </div>
-
-    <div class="catalog-filter__tags">
-        <button class="catalog-filter__tag button button--secondary button--sm">
-            UI Kit
-            {{ icon("icon-x-close") }}
-        </button>
-        <button class="catalog-filter__tag button button--secondary button--sm">
-            UI Kit
-            {{ icon("icon-x-close") }}
-        </button>
-    </div>
-
-</div>
+</filter>
 
 
 
