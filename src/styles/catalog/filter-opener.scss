@@ -23,7 +23,7 @@
         align-items: center;
         justify-content: space-between;
         padding: 28px 16px;
-        background-color: #b4bb68;
+        background-color: var(--bg-alternative2);
     }
 
     &__title {
@@ -40,7 +40,7 @@
 
     &__button {
         padding: 16px;
-        background-color: #477774;
+        background-color: var(--bg-alternative2);
 
         & button {
             width: 100%;

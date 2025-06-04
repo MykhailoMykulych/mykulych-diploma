@@ -1,7 +1,15 @@
 @use '../mixins' as *;
 @use '../ui/brakepoints' as *;
 
-// .catalog {
-//     display: flex;
+.catalog {
+    display: flex;
+    gap: 24px;
 
-// }
+    &__aside-filter {
+        display: none;
+
+        @include lg {
+            display: block;
+        }
+    }
+}

@@ -29,6 +29,8 @@
 @use "catalog/catalog-header";
 @use "catalog/filter-opener";
 @use "catalog/filter";
+@use "catalog/catalog-content";
+
 
 // ======= Blog ============
 @use "blog/blog";
