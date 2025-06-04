@@ -24,6 +24,12 @@
         width: 100%;
     }
 
+    &__filter-toggle {
+        @include lg {
+            @include hide-element;
+        }
+    }
+
     &__sort-group {
         display: flex;
         align-items: center;
