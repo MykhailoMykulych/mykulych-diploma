@@ -33,6 +33,8 @@
 
         @include md {
             @include show-element;
+
+            position: static;
         }
     }
 }
