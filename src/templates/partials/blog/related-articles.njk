@@ -1,48 +1,40 @@
 <div class="related-articles">
 
-    <div class="related-articles__header">
-        <h2 class="related-articles__title">Related Articles</h2>
-        <a class="related-articles__link" href="#">Explore All Articles</a>
-    </div>
-
-
-    {# <div class="related-articles__list">
-        <article class="article-card">
-        <div class="article-card__illustration">
-            {% from 'src/templates/partials/ui/icon.njk' import picture %}
-            {{ picture("article-card__image", "laurent", "Best Dishes") }}
-            <span class="article-card__tag label label--popular">Tag</span>
-        </div>
-        <h3 class="article-card__title">Best Dishes</h3>
-        <time class="article-card__date">15 April 2024</time>
-        </article>
-
-        <article class="article-card">
-        <div class="article-card__illustration">
-            {% from 'src/templates/partials/ui/icon.njk' import picture %}
-            {{ picture("article-card__image", "laurent", "Contact Us Lotus Spa") }}
-            <span class="article-card__tag label label--popular">Tag</span>
-        </div>
-        <h3 class="article-card__title">Contact Us Lotus Spa</h3>
-        <time class="article-card__date">15 April 2024</time>
-        </article>
-
-        <article class="article-card">
-        <div class="article-card__illustration">
-            {% from 'src/templates/partials/ui/icon.njk' import picture %}
-            {{ picture("article-card__image", "Thumb", "Creative Blog") }}
-            <span class="article-card__tag label label--popular">Tag</span>
-        </div>
-        <h3 class="article-card__title">Creative Blog</h3>
-        <time class="article-card__date">15 April 2024</time>
-        </article>
-    </div> #}
+	<div class="related-articles__header">
+		<h2 class="related-articles__title">Related Articles</h2>
+		<a class="related-articles__link link" href="#">Explore All Articles</a>
+	</div>
 
     <div class="related-articles__list">
-  {% from 'src/templates/partials/ui/icon.njk' import picture %}
+	{% from 'src/templates/partials/ui/icon.njk' import picture %}
 
-  {% for article in articles %}
-    <article class="article-card">
+		{% for article in articles %}
+    	<article class="article-card">
+
+			<div class="article-card__illustration">
+        		{{ picture("article-card__image", article.image, article.alt) }}
+        		<span class="article-card__tag label label--popular">{{ article.tag }}</span>
+			</div>
+			<h3 class="article-card__title">{{ article.title }}</h3>
+			<time class="article-card__date">{{ article.date }}</time>
+    	</article>
+		{% endfor %}
+	</div>
+
+</div>
+
+{# <div class="related-articles">
+
+  <div class="related-articles__header">
+    <h2 class="related-articles__title">Related Articles</h2>
+    <a class="related-articles__link link" href="#">Explore All Articles</a>
+  </div>
+
+  <div class="related-articles__list">
+    {% from 'src/templates/partials/ui/icon.njk' import picture %}
+
+    {% for article in articles %}
+    <article class="article-card related-articles__item">
       <div class="article-card__illustration">
         {{ picture("article-card__image", article.image, article.alt) }}
         <span class="article-card__tag label label--popular">{{ article.tag }}</span>
@@ -50,8 +42,8 @@
       <h3 class="article-card__title">{{ article.title }}</h3>
       <time class="article-card__date">{{ article.date }}</time>
     </article>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
 
+</div> #}
 
-</div>
