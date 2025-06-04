@@ -1,5 +1,5 @@
-{% macro icon(type) %}
-<svg class="icon">
+{% macro icon(type, modificator) %}
+<svg class="icon {{ modificator }}">
     <use href="/src/assets/sprite.svg#{{ type }}"/>
 </svg>
 {% endmacro %}

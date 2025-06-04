@@ -1,0 +1,39 @@
+<form class="form">
+  <div class="form-group">
+    <label for="full-name">Full Name</label>
+    <input type="text" id="full-name" name="full-name" class="form-input" placeholder="Amelia Robert Johnson" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" class="form-input" placeholder="amelia.robertjohnson@pixmart.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject" class="form-input" required>
+      <option value="">Select a subject</option>
+      <option value="general">General Inquiry</option>
+      <option value="support">Support</option>
+      <option value="feedback">Feedback</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" class="form-input" placeholder="Enter your message ..." required></textarea>
+  </div>
+
+  <div class="form-options">
+    <label class="form-checkbox">
+      <input type="checkbox" name="subscribe">
+      Subscribe me to Newsletter
+    </label>
+    <label class="form-checkbox">
+      <input type="checkbox" name="privacy" required checked>
+      I have read the User & Privacy Policy
+    </label>
+  </div>
+
+  <button type="submit" class="form-button">Send Message</button>
+</form>
