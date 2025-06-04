@@ -44,4 +44,8 @@ ul {
     &--blue {
         color: var(--marina-800);
     }
+
+    &--white {
+        color: var(--color-primary-invert);
+    }
 }

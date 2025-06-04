@@ -104,27 +104,30 @@
 
     &--md {
         min-height: 40px;
-        padding: 8px 20px;
+        padding: 6px 20px;
         font-size: 16px;
         line-height: 1;
     }
 
     &--sm {
         min-height: 32px;
-        padding: 6px 12px;
+        padding: 2px 12px;
         font-size: 16px;
         line-height: 1;
     }
 
     &--icon-lg {
         padding: 18px;
+        min-height: 64px;
     }
 
     &--icon-md {
         padding: 6px;
+        min-height: 40px;
     }
 
     &--icon-sm {
         padding: 9px;
+        min-height: 32px;
     }
 }
