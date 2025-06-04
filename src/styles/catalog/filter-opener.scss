@@ -2,12 +2,20 @@
 @use '../ui/brakepoints' as *;
 
 .filter-opener {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     inset: 0;
+    transform: translateY(20px);
+    z-index: 1000;
+    transition:
+        opacity var(--tran-duration),
+        transform var(--tran-duration);
 
     &.active {
-        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 
     &__header {
