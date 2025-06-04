@@ -1,12 +1,12 @@
 @use '../mixins' as *;
 @use '../ui/brakepoints' as *;
 
-.catalog-controls {
+.catalog__header {
     display: flex;
     flex-direction: column;
     gap: 24px;
 
-    &__top {
+    &-top {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -17,7 +17,7 @@
         }
     }
 
-    &__filter-group {
+    &-controls {
         display: flex;
         align-items: center;
         gap: 8px;
@@ -29,13 +29,13 @@
         }
     }
 
-    &__filter-toggle {
+    &-toggle {
         @include lg {
             @include hide-element;
         }
     }
 
-    &__sort-group {
+    &-sort {
         display: flex;
         align-items: center;
         gap: 24px;
@@ -47,13 +47,13 @@
         }
     }
 
-    &__view-toggle {
+    &-view {
         display: flex;
         align-items: center;
         gap: 8px;
     }
 
-    &__tags {
+    &-tags {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
