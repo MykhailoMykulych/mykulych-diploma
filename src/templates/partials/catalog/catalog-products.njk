@@ -1,5 +1,5 @@
 {% for item in catalog %}
-<div class="product">
+<div class="product{% if 'soldout' in item.badge %} product--soldout{% endif %}">
     <div class="product__illustration">
         {% from 'src/templates/partials/ui/icon.njk' import picture %}
         {{ picture("product__illustration-image", item.image, item.alt) }}
