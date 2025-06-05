@@ -2,6 +2,18 @@
 @use '../ui/brakepoints' as *;
 
 .banner {
+    &::before {
+        content: '';
+        position: absolute;
+        height: 604px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(0.23deg, #F0F6FD 0.2%, rgb(255 255 255 / 0) 99.8%);
+
+    }
+
     &__content {
         padding-block: 64px;
     }
@@ -15,7 +27,7 @@
             @include heading-h1;
         }
     }
-    
+
     &__image {
         max-width: 100%;
         height: auto;
