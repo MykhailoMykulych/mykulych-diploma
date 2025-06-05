@@ -1,53 +1,33 @@
 <article class="article">
 
-    <section class="article__section">
-        <p class="article__text">
-            In the vast expanse of graphic design, typography stands as a pivotal element that can make or break the visual appeal of any project. Understanding the art of typography is essential for creating designs that not only attract attention but also communicate effectively. Here, we delve into practical tips that will help you master typography, transforming your creations into eye-catching masterpieces.
-        </p>
-    </section>
+    {% for block in article.blocks %}
+        {% if block.type == "text" %}
+            <section class="article__section">
+                <p class="article__text">{{ block.text }}</p>
+            </section>
 
-    <section class="article__section">
-        <h2 class="article__heading">1. Understand Typeface Selection</h2>
-        <p class="article__text">
-            The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated.
-        </p>
-    </section>
+        {% elif block.type == "heading-text" %}
+            <section class="article__section">
+                <h2 class="article__heading">{{ loop.index }}. {{ block.heading }}</h2>
+                <p class="article__text">{{ block.text }}</p>
+            </section>
 
-    <div class="article__illustration">
-        {% from 'src/templates/partials/ui/icon.njk' import picture %}
-        {{ picture("article__image", "fonts-desk", "Desk with many fonts") }}
-        <div class="article__info">
-            <p class="article__info-description">Example of font usage in typography.</p>
-            <a href="#" class="article__info-link link">Get this asset</a>
-        </div>
-    </div>
+        {% elif block.type == "illustration" %}
+            <div class="article__illustration">
+                {% from 'src/templates/partials/ui/icon.njk' import picture %}
+                {{ picture("article__image", block.image.src, block.image.alt) }}
+                <div class="article__info">
+                    <p class="article__info-description">{{ block.image.description }}</p>
+                    <a href="{{ block.image.link.href }}" class="article__info-link link">{{ block.image.link.text }}</a>
+                </div>
+            </div>
 
-    <section class="article__section">
-        <h2 class="article__heading">1. Understand Typeface Selection</h2>
-        <p class="article__text">
-            The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated.
-        </p>
-    </section>
-
-    <section class="article__section">
-        <h2 class="article__heading">1. Understand Typeface Selection</h2>
-        <p class="article__text">
-            The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated.
-        </p>
-    </section>
-
-    <section class="article__section">
-        <h2 class="article__heading">1. Understand Typeface Selection</h2>
-        <p class="article__text">
-            The choice of typeface is foundational in setting the tone of your design. Serif fonts, with their classic appeal, lend a touch of elegance and formality, making them ideal for print media and official documents. Sans-serif fonts, on the other hand, project a modern and clean look, perfect for digital platforms. When selecting a typeface, consider the message you wish to convey and the medium through which it will be communicated.
-        </p>
-    </section>
-
-    <blockquote class="quote">
-        <img class="quote__icon" src="/src/assets/images/quote.svg" />
-        <p class="quote__text">
-            Typography is not just the art of arranging type but the craft of breathing life into characters, turning words into stories that captivate the soul.
-        </p>
-    </blockquote>
+        {% elif block.type == "quote" %}
+            <blockquote class="quote">
+                <img class="quote__icon" src="{{ block.quote.icon }}" />
+                <p class="quote__text">{{ block.quote.text }}</p>
+            </blockquote>
+        {% endif %}
+    {% endfor %}
 
 </article>
