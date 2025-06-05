@@ -52,22 +52,3 @@
         @include link-l2;
     }
 }
-
-//  ============ Text field  ============
-.text-field {
-    border: 1px solid var(--seporator-bold);
-    padding: 10px 12px;
-    border-radius: 8px;
-
-    @include text-p3-regular;
-
-    &:hover {
-        border-color: var(--marina-600);
-        outline: 1px solid var(--marina-600);
-    }
-
-    &:focus-visible {
-        outline: 2px solid var(--marina-600);
-        border-color: var(--marina-600);
-    }
-}
