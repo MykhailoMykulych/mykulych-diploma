@@ -1,6 +1,87 @@
 @use '../mixins' as *;
 @use '../ui/brakepoints' as *;
 
-.related-articles {
-    background-color: rgb(240 246 253 / 1);
-}
+// .related-articles {
+//     background-color: rgb(240 246 253 / 1);
+
+//     &__header {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 16px;
+//         padding-top: 32px;
+
+//         @include md {
+//             flex-direction: row;
+//             justify-content: space-between;
+//             align-items: center;
+//             padding-top: 40px;
+//         }
+//     }
+
+//     &__title {
+//         @include heading-h2;
+//     }
+
+//     &__link {
+//         @include link-l2;
+//         color: var(--accent-link);
+//         &::after {
+//             content: '';
+//             width: 16px;
+//             height: 16px;
+//             display: block;
+//             flex-shrink: 0;
+//             background-image: url(/src/assets/images/chevron-right.svg);
+//         }
+//     }
+
+//     // &__list {
+//     //     padding-top: 32px;
+//     //     display: flex;
+//     //     flex-wrap: wrap;
+//     //     gap: 24px;
+//     // }
+// }
+
+// .article-card {
+//     background-color: red;
+//     width: 33%;
+//     padding: 20px;
+//     border-radius: 20px;
+
+//     &__illustration {
+//         overflow: hidden;
+//     }
+
+//     &__image {
+//         width: 100%;
+//         border-radius: 20px;
+//         height: auto;
+//     }
+// }
+
+// .related-articles__list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 24px;
+// }
+
+// .article-card {
+//   flex: 1 1 100%; /* Мобильная версия: одна карточка в ряд */
+// }
+
+// @media (min-width: 1024px) {
+//   .article-card {
+//     flex: 1 1 calc(50% - 12px); /* 2 карточки по 50% */
+//   }
+
+//   .article-card:nth-child(3) {
+//     flex: 1 1 100%; /* 3-я карточка на всю ширину */
+//   }
+// }
+
+// @media (min-width: 1440px) {
+//   .article-card {
+//     flex: 1 1 calc(33.333% - 16px); /* 3 карточки в ряд */
+//   }
+// }
