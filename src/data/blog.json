@@ -19,7 +19,8 @@
             "alt": "Creative Blog",
             "title": "Creative Blog",
             "date": "20 June 2024",
-            "tag": "Tag"
+            "tag": "Tag",
+            "big": true
         }
     ]
 }
