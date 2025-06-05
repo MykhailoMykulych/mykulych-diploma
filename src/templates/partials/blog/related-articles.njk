@@ -6,18 +6,18 @@
 	</div>
 
     <div class="related-articles__list">
-	{% from 'src/templates/partials/ui/icon.njk' import picture %}
+        {% from 'src/templates/partials/ui/icon.njk' import picture %}
 
 		{% for article in articles %}
-    	<article class="article-card">
+            <article class="article-card">
 
-			<div class="article-card__illustration">
-        		{{ picture("article-card__image", article.image, article.alt) }}
-        		<span class="article-card__tag label label--popular">{{ article.tag }}</span>
-			</div>
-			<h3 class="article-card__title">{{ article.title }}</h3>
-			<time class="article-card__date">{{ article.date }}</time>
-    	</article>
+                <div class="article-card__illustration">
+                    {{ picture("article-card__image", article.image, article.alt) }}
+                    <span class="article-card__tag label label--popular">{{ article.tag }}</span>
+                </div>
+                <h3 class="article-card__title">{{ article.title }}</h3>
+                <time class="article-card__date">{{ article.date }}</time>
+            </article>
 		{% endfor %}
 	</div>
 
