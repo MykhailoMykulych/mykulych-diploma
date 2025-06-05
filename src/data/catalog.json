@@ -1,0 +1,76 @@
+{
+    "catalog": [
+        {
+            "title": "Career Success",
+            "meta": "Guidance · Jobs",
+            "price": 15.99,
+            "image": "career",
+            "alt": "Career Success",
+            "badge": ["new"]
+        },
+        {
+            "title": "Design Thinking",
+            "meta": "Creativity · UX",
+            "price": 12.49,
+            "image": "career",
+            "alt": "Design Thinking Guide",
+            "badge": ["popular"]
+        },
+        {
+            "title": "Web Development",
+            "meta": "Frontend · Backend",
+            "price": 18.75,
+            "image": "career",
+            "alt": "Web Development Course",
+            "badge": ["soldout"]
+        },
+        {
+            "title": "Design Thinking",
+            "meta": "Creativity · UX",
+            "price": 12.49,
+            "image": "career",
+            "alt": "Design Thinking Guide",
+            "badge": ["popular"]
+        },
+        {
+            "title": "Design Thinking",
+            "meta": "Creativity · UX",
+            "price": 12.49,
+            "image": "career",
+            "alt": "Design Thinking Guide",
+            "badge": ["popular"]
+        },
+        {
+            "title": "Design Thinking",
+            "meta": "Creativity · UX",
+            "price": 12.49,
+            "image": "career",
+            "alt": "Design Thinking Guide",
+            "badge": ["popular"]
+        },
+        {
+            "title": "Design Thinking",
+            "meta": "Creativity · UX",
+            "price": 12.49,
+            "image": "career",
+            "alt": "Design Thinking Guide",
+            "badge": ["popular"]
+        },
+        {
+            "title": "Design Thinking",
+            "meta": "Creativity · UX",
+            "price": 12.49,
+            "image": "career",
+            "alt": "Design Thinking Guide",
+            "badge": ["popular"]
+        },
+        {
+            "title": "Design Thinking",
+            "meta": "Creativity · UX",
+            "price": 12.49,
+            "image": "career",
+            "alt": "Design Thinking Guide",
+            "badge": ["popular"]
+        }
+    ]
+}
