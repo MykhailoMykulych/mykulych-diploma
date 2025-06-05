@@ -1,5 +1,5 @@
-@use "../ui/brakepoints" as *;
-@use "../mixins" as *;
+@use '../ui/brakepoints' as *;
+@use '../mixins' as *;
 
 .footer {
     width: 100%;
@@ -7,8 +7,8 @@
 
     &__wrapper {
         &--bottom {
-        background-color: var(--fixed-base);
-    }
+            background-color: var(--fixed-base);
+        }
     }
 
     &__content {
@@ -135,8 +135,6 @@
         }
 
         &-input {
-            width: 100%;
-
             @include md {
                 min-width: 240px;
             }
@@ -175,7 +173,7 @@
             align-items: center;
 
             &:not(:last-child)::after {
-                content: "";
+                content: '';
                 position: relative;
                 display: inline-block;
                 height: 24px;

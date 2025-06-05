@@ -68,7 +68,6 @@
                 background-color: var(--fixed-baseWhite);
             }
         }
-
     }
 }
 
@@ -213,8 +212,27 @@
     border: 1px solid var(--seporator-bold);
     padding: 10px 12px;
     border-radius: 8px;
+    width: 100%;
 
     @include text-p3-regular;
+
+    transition:
+        border-color var(--tran-duration),
+        outline var(--tran-duration);
+
+    &::placeholder {
+        color: var(--fixed-secondary2);
+    }
+
+    &--textarea {
+        resize: none;
+        min-height: 180px;
+
+        &::placeholder {
+            color: var(--color-primary);
+        }
+
+    }
 
     &:hover {
         border-color: var(--marina-600);
@@ -226,4 +244,3 @@
         border-color: var(--marina-600);
     }
 }
-
