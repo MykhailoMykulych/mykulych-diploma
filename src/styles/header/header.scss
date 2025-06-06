@@ -1,59 +1,7 @@
 @use '../ui/brakepoints' as *;
 @use '../mixins' as *;
 
-// .header {
-//     &__content {
-//         margin: 0 auto;
-//         width: 100%;
-//         max-width: 1440px;
-//         padding-inline: 16px;
-
-//         @include md {
-//             padding-inline: 40px;
-//         }
-
-//         @include lg {
-//             padding-inline: 80px;
-//         }
-//     }
-
-//     &__container {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         width: 100%;
-//         padding-block: 26px;
-
-//          @include md {
-//             padding-block: 24px;
-//          }
-
-//     }
-
-//     &__rename {
-//         display: flex;
-//         align-items: center;
-//         gap: 32px;
-//         width: 100%;
-//     }
-
-//     &__nav {
-//         display: flex;
-
-//         &-list {
-//             display: flex;
-//         }
-//     }
-
-//     &__search {
-//         display: flex;
-//         align-items: center;
-//         gap: 8px;
-//     }
-// }
-
 .header {
-    padding: 20px;
     background-color: #ffffff;
     position: relative;
 
@@ -71,13 +19,77 @@
             padding-inline: 80px;
         }
     }
-}
 
-.header__container {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    position: relative;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        position: relative;
+        padding-block: 26px;
+
+        @include md {
+            padding-block: 24px;
+        }
+    }
+
+    &__nav {
+        position: absolute;
+        max-height: 0;
+        overflow: hidden;
+        background-color: var(--bg-base);
+        width: 100%;
+        top: 100%;
+        left: 0;
+        transition: max-height 0.4s ease-in-out;
+
+        @include md {
+            position: static;
+            max-height: none;
+            overflow: visible;
+        }
+
+        &.active {
+            max-height: 352px; /* Opened Menu */
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        z-index: 100;
+        background-color: var(--bg-base);
+
+        @include md {
+            flex-direction: row;
+            gap: 24px;
+            margin-left: 32px;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    &__search {
+        @include hide-element;
+
+        @include md {
+            @include show-element;
+        }
+    }
+
+    &__button {
+        &:first-of-type {
+            @include md {
+                @include hide-element;
+            }
+        }
+    }
 }
 
 .burger {
@@ -85,30 +97,34 @@
     flex-direction: column;
     width: 40px;
     height: 40px;
+
+    @include md {
+        display: none;
+    }
+
+    &__line {
+        position: absolute;
+        inset-inline: 5px;
+        height: 2px;
+        background-color: var(--bg-base);
+        border-radius: 2px;
+        transition: 0.3s;
+
+        &:nth-child(1) {
+            top: 11px;
+        }
+
+        &:nth-child(2) {
+            top: 17px;
+        }
+
+        &:nth-child(3) {
+            top: 23px;
+        }
+    }
 }
 
-.burger__line {
-    position: absolute;
-    inset-inline: 5px;
-    height: 2px;
-    background-color: #ffffff;
-    border-radius: 2px;
-    transition: 0.3s;
-
-    &:nth-child(1) {
-        top: 11px;
-    }
-
-    &:nth-child(2) {
-        top: 17px;
-    }
-
-    &:nth-child(3) {
-        top: 23px;
-    }
-}
-
-/* Бургер в крестик */
+/* Burger in a cross */
 .burger.active .burger__line:nth-child(1) {
     top: 50%;
     transform: rotate(45deg);
@@ -121,72 +137,4 @@
 .burger.active .burger__line:nth-child(3) {
     top: 50%;
     transform: rotate(-45deg);
-}
-
-.header__logo {
-    font-size: 24px;
-    font-weight: 700;
-    color: #0070f3;
-    text-decoration: none;
-}
-
-.header__nav {
-    overflow: hidden;
-    max-height: 0;
-    flex-direction: column;
-    background-color: #ffffff;
-    width: 100%;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
-    transition: max-height 0.3s ease;
-}
-
-.header__nav.active {
-    max-height: 300px; /* Открытое меню */
-}
-
-.header__list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 20px 0;
-}
-
-.header__item a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.header__actions {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    margin-left: auto;
-}
-
-/* === Desktop версия === */
-@media (width >= 1024px) {
-    .burger {
-        display: none;
-    }
-
-    .header__nav {
-        position: static;
-        max-height: none;
-        overflow: visible;
-        flex-direction: row;
-        background: none;
-        box-shadow: none;
-    }
-
-    .header__list {
-        flex-direction: row;
-        gap: 24px;
-        padding: 0;
-        margin-left: 32px;
-    }
 }
