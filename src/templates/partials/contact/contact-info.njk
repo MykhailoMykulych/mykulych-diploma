@@ -2,7 +2,7 @@
 
     <div class="contact__texts">
         <p class="contact__texts-tag">{{ g_contact }}</p>
-        <h1 class="contact__texts-title">{{ get_in_touch }}</h1>
+        <h1 class="contact__texts-title">{{ get_in_touch }}<br>{{ with_us }} </h1>
         <p class="contact__texts-description">
             {{ contact_description }}
         </p>
@@ -34,8 +34,8 @@
         <div class="contact__pin">
             {{ icon("icon-marker-pin", "icon--blue") }}
             <div class="contact__pin-wrapper">
-                <h4 class="contact__pin-name">PixMart HQ</h4>
-                <p class="contact__pin-adress">123 Creative Ave, Design City, 45678</p>
+                <h4 class="contact__pin-name">{{ contact_name }}</h4>
+                <p class="contact__pin-adress">{{ contact_adress }}</p>
             </div>
         </div>
 

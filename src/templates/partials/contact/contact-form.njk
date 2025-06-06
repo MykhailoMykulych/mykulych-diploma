@@ -3,12 +3,12 @@
 	<div class="form__fields">
 
 		<div class="form__fields-group">
-			<label class="form__fields-label" for="full-name">Full Name</label>
+			<label class="form__fields-label" for="full-name">{{ form_name }}</label>
 			<input type="text" id="full-name" name="full-name" class="form-field" placeholder="Amelia Robert Johnson" required>
 		</div>
 
 		<div class="form__fields-group">
-			<label class="form__fields-label" for="email">Email Address</label>
+			<label class="form__fields-label" for="email">{{ form_email }}</label>
 			<input type="email" id="email" name="email" class="form-field" placeholder="amelia.robertjohnson@pixmart.com" required>
 		</div>
 
@@ -23,7 +23,7 @@
 		</div>
 
 		<div class="form__fields-group">
-			<label class="form__fields-label" for="message">Message</label>
+			<label class="form__fields-label" for="message">{{ form_message }}</label>
 			<textarea id="message" name="message" class="form-field form-field--textarea" placeholder="Enter your message ..." required></textarea>
 		</div>
 
@@ -35,19 +35,19 @@
 			<label class="form__options-option">
 				<input type="checkbox" class="default-checkbox" name="subscribe">
 				<span class="custom-checkbox"></span>
-				Subscribe me to Newsletter
+				{{ form_subscribe }}
 			</label>
 
 			<label class="form__options-option">
 				<input type="checkbox" class="default-checkbox" name="privacy" required>
 				<span class="custom-checkbox"></span>
-				I have read the User & Privacy Policy
+				{{ form_i_read }}
 			</label>
 			
 		</div>
 
 		<button class="form__button button button--primary button--lg" type="submit">
-			Send Message
+			{{ form_send }}
 		</button>
 
 	</div>
