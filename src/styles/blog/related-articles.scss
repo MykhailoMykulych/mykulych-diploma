@@ -2,8 +2,6 @@
 @use '../ui/brakepoints' as *;
 
 .related-articles {
-    background-color: rgb(240 246 253 / 1);
-
     &__header {
         display: flex;
         flex-direction: column;
