@@ -60,10 +60,22 @@
         position: relative;
         display: flex;
         overflow: hidden;
-
-        // background: lightcyan;
         min-height: 460px;
         width: 100%;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+            width: 294px;
+            height: 60px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            background: linear-gradient(360deg, #F0F6FD 0%, rgb(255 255 255 / 0) 189.17%);
+
+        }
     }
 
     &__cards-wrapper {
@@ -76,12 +88,12 @@
         transform: translateY(-50%);
 
         &--left {
-            animation: float-left 9s infinite;
+            animation: float-left 59s infinite;
         }
 
         &--right {
             left: calc(var(--column-width) + var(--column-gap));
-            animation: float-right 9s infinite;
+            animation: float-right 59s infinite;
         }
     }
 
