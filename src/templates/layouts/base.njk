@@ -21,6 +21,17 @@
         {% include "src/templates/partials/common/footer.njk" %}
 
 
+        {# Script for Mobile Burger #}
+        <script>
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.header__nav');
+
+            burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+            });
+        </script>
+
         {# Script for Catalog Filter #}
         <script>
             document.addEventListener("DOMContentLoaded", function () {
