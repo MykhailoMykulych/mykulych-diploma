@@ -5,73 +5,97 @@
         {
             "title": "Career Success",
             "meta": "Guidance · Jobs",
-            "price": 15.99,
-            "image": "career",
+            "price": 0,
+            "image": "dream",
             "alt": "Career Success",
-            "badge": ["new"]
-        },
-        {
-            "title": "Design Thinking",
-            "meta": "Creativity · UX",
-            "price": 12.49,
-            "image": "career",
-            "alt": "Design Thinking Guide",
-            "badge": ["popular"]
-        },
-        {
-            "title": "Web Development",
-            "meta": "Frontend · Backend",
-            "price": 18.75,
-            "image": "career",
-            "alt": "Web Development Course",
             "badge": ["soldout"]
         },
         {
-            "title": "Design Thinking",
-            "meta": "Creativity · UX",
-            "price": 12.49,
+            "title": "Career Success",
+            "meta": "Guidance · Jobs",
+            "price": 20.99,
             "image": "career",
+            "alt": "Design Thinking Guide",
+            "badge": ["new"]
+        },
+        {
+            "title": "Dream Homes",
+            "meta": "Real Estate · Modern",
+            "price": 18.75,
+            "image": "dream",
             "alt": "Design Thinking Guide",
             "badge": ["popular"]
         },
         {
-            "title": "Design Thinking",
-            "meta": "Creativity · UX",
-            "price": 12.49,
-            "image": "career",
-            "alt": "Design Thinking Guide",
+            "title": "Foodish Catering",
+            "meta": "Food · Events",
+            "price": 15.99,
+            "image": "foodish",
+            "alt": "Foodish Catering",
             "badge": ["popular"]
         },
         {
-            "title": "Design Thinking",
-            "meta": "Creativity · UX",
+            "title": "Caring Hearts",
+            "meta": "Healthcare · Support",
+            "price": 19.99,
+            "image": "caring",
+            "alt": "Caring Hearts support organisation",
+            "badge": ["new"]
+        },
+        {
+            "title": "Admin Dashboard",
+            "meta": "Data · Tools",
+            "price": 15.99,
+            "image": "admin",
+            "alt": "Admin Dashboard tool",
+            "badge": ["soldout"]
+        },
+        {
+            "title": "Banking Redefined",
+            "meta": "Finance · Secure",
             "price": 12.49,
-            "image": "career",
+            "image": "banking",
+            "alt": "Banking Redefined security",
+            "badge": ["soldout"]
+        },
+        {
+            "title": "Exploring Fun",
+            "meta": "Travel · Adventure",
+            "price": 41.99,
+            "image": "exploring",
             "alt": "Design Thinking Guide",
+            "badge": ["new"]
+        },
+        {
+            "title": "Analytical Dashboard",
+            "meta": "Data · Tools",
+            "price": 10.99,
+            "image": "analytical",
+            "alt": "Analytical Dashboard admin",
             "badge": ["popular"]
         },
         {
-            "title": "Design Thinking",
-            "meta": "Creativity · UX",
-            "price": 12.49,
+            "title": "Career Success",
+            "meta": "Guidance · Jobs",
+            "price": 20.99,
             "image": "career",
             "alt": "Design Thinking Guide",
-            "badge": ["popular"]
+            "badge": ["new"]
         },
         {
-            "title": "Design Thinking",
-            "meta": "Creativity · UX",
-            "price": 12.49,
-            "image": "career",
-            "alt": "Design Thinking Guide",
-            "badge": ["popular"]
+            "title": "Admin Dashboard",
+            "meta": "Data · Tools",
+            "price": 15.99,
+            "image": "admin",
+            "alt": "Admin Dashboard tool",
+            "badge": ["new"]
         },
         {
-            "title": "Design Thinking",
-            "meta": "Creativity · UX",
+            "title": "Banking Redefined",
+            "meta": "Finance · Secure",
             "price": 12.49,
-            "image": "career",
-            "alt": "Design Thinking Guide",
+            "image": "banking",
+            "alt": "Banking Redefined security",
             "badge": ["popular"]
         }
     ]
