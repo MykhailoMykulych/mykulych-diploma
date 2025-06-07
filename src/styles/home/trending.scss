@@ -21,7 +21,7 @@
     &__tag {
         @include text-p2-regular;
 
-        color: #0f73f6;
+        color: var(--marina-800);
         text-transform: uppercase;
     }
 

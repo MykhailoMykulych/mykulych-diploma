@@ -21,8 +21,8 @@
     &__tag {
         @include text-p2-regular;
 
+        color: var(--marina-800);
         text-transform: uppercase;
-        color: #0f73f6;
     }
 
     &__button {

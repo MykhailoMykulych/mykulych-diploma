@@ -29,7 +29,8 @@
     &__tag {
         @include text-p2-regular;
 
-        color: rgb(15 115 246 / 1);
+        color: var(--marina-800);
+        text-transform: uppercase;
     }
 
     &__heading {
