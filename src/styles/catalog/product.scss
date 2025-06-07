@@ -1,16 +1,15 @@
 @use '../mixins' as *;
 @use '../ui/brakepoints' as *;
 
+ // grid-template-columns: 1fr 1fr 1fr;
 .catalog__products {
     display: grid;
-    grid-template-columns: 1fr;
+
+    // grid-template-columns: 1fr;
     gap: 32px;
     padding-top: 48px;
     position: relative;
-
-    @include md {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     &::after {
         position: absolute;

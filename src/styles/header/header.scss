@@ -2,6 +2,8 @@
 @use '../mixins' as *;
 
 .header {
+    --mobile-header-height: 92px;
+
     background-color: #ffffff;
     position: relative;
 
@@ -33,14 +35,15 @@
     }
 
     &__nav {
-        position: absolute;
+        position: fixed;
         max-height: 0;
         overflow: hidden;
         background-color: var(--bg-base);
-        width: 100%;
-        top: 100%;
+        width: 100vw;
+        top: var(--mobile-header-height);
         left: 0;
         transition: max-height 0.4s ease-in-out;
+        z-index: 9999;
 
         @include md {
             position: static;
@@ -49,7 +52,9 @@
         }
 
         &.active {
-            max-height: 352px; /* Opened Menu */
+            height: calc(100vh - var(--mobile-header-height));
+            background-color: var(--bg-base);
+            max-height: 100%;
         }
     }
 
@@ -59,7 +64,6 @@
         gap: 8px;
         position: relative;
         z-index: 100;
-        background-color: var(--bg-base);
 
         @include md {
             flex-direction: row;

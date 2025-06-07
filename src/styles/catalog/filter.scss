@@ -6,6 +6,7 @@
     flex-direction: column;
     gap: 40px;
     background-color: var(--bg-base);
+    padding: 40px 16px 0;
 
     // min width for desktop aside filter
     min-width: 218px;
@@ -39,5 +40,3 @@
         justify-content: space-between;
     }
 }
-
-

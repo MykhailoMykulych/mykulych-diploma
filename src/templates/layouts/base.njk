@@ -14,21 +14,23 @@
         <link rel="stylesheet" href="/src/styles/style.scss">
     </head>
     <body>
-        {% include "src/templates/partials/common/header.njk" %}
-        <main class="main">
-            {% block content %}  default content  {% endblock %}
-        </main>
-        {% include "src/templates/partials/common/footer.njk" %}
-
-
+        <div class="main-layout">
+            {% include "src/templates/partials/common/header.njk" %}
+            <main class="main">
+                {% block content %}  default content  {% endblock %}
+            </main>
+            {% include "src/templates/partials/common/footer.njk" %}
+        </div>
         {# Script for Mobile Burger #}
         <script>
             const burger = document.querySelector('.burger');
             const nav = document.querySelector('.header__nav');
+            const body = document.querySelector('body')
 
             burger.addEventListener('click', () => {
-            burger.classList.toggle('active');
-            nav.classList.toggle('active');
+                burger.classList.toggle('active');
+                nav.classList.toggle('active');
+                body.classList.toggle('overflow-hidden');
             });
         </script>
 
@@ -38,13 +40,16 @@
             const filterToggleButton = document.querySelector(".catalog__header-toggle");
             const filterOpener = document.querySelector(".filter-opener");
             const filterCloseButton = document.querySelector(".filter-opener_button");
+            const body = document.querySelector('body')
 
             filterToggleButton.addEventListener("click", function () {
-                filterOpener.classList.toggle("active");
+                filterOpener.classList.add("active");
+                body.classList.add('overflow-hidden');
             });
 
             filterCloseButton.addEventListener("click", function () {
                 filterOpener.classList.remove("active");
+                                body.classList.remove('overflow-hidden');
             });
             });
         </script>

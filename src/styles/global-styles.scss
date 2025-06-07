@@ -9,8 +9,20 @@ body {
     background-color: var(--bg-base);
     color: var(--color-primary); /* Safari */ /* Firefox */
     user-select: none; /* Internet Explorer/Edge */
+
+    &.overflow-hidden {
+        overflow: hidden;
+    }
 }
 
+// layouts
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+//  layouts-end
 .main {
     display: flex;
     flex-direction: column;
