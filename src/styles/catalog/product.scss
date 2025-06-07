@@ -37,6 +37,10 @@
     &--soldout {
         opacity: 0.5;
         pointer-events: none;
+
+        & .product-actions__buttons {
+            display: none;
+        }
     }
 
     &__illustration {
