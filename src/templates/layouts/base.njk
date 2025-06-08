@@ -21,6 +21,7 @@
             </main>
             {% include "src/templates/partials/common/footer.njk" %}
         </div>
+
         {# Script for Mobile Burger #}
         <script>
             const burger = document.querySelector('.burger');
@@ -53,5 +54,38 @@
             });
             });
         </script>
+
+        {# Script for Input Range #}
+        <script>
+            const minRange = document.getElementById('min');
+            const maxRange = document.getElementById('max');
+            const minValue = document.getElementById('min-value');
+            const maxValue = document.getElementById('max-value');
+            const range = document.querySelector('.range-slider__range');
+
+            function updateValues() {
+            let min = parseInt(minRange.value);
+            let max = parseInt(maxRange.value);
+
+            if (min > max) {
+                [min, max] = [max, min]; // swap
+            }
+
+            minValue.textContent = `€${min}`;
+            maxValue.textContent = `€${max}`;
+
+            const minPercent = ((min - 5) / (50 - 5)) * 100;
+            const maxPercent = ((max - 5) / (50 - 5)) * 100;
+
+            range.style.left = `${minPercent}%`;
+            range.style.width = `${maxPercent - minPercent}%`;
+            }
+
+            minRange.addEventListener('input', updateValues);
+            maxRange.addEventListener('input', updateValues);
+
+            updateValues();
+        </script>
+        
     </body>
 </html>

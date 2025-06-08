@@ -148,11 +148,18 @@
         <h3 class="filter__title">Price</h3>
 
         <div class="filter__list">
-            <input type="range" min="5" max="50" value="5" />
-            <div class="filter__price-labels">
-                <span>€5</span>
-                <span>€50</span>
+
+            <div class="range-slider">
+                <div class="range-slider__track"></div>
+                <div class="range-slider__range"></div>
+                <input type="range" min="5" max="50" value="10" id="min">
+                <input type="range" min="5" max="50" value="40" id="max">
             </div>
+            <div class="range-values">
+                <span class="range-values-price" id="min-value">€10</span>
+                <span class="range-values-price" id="max-value">€40</span>
+            </div>
+
         </div>
     </div>
 
