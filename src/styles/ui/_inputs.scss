@@ -214,6 +214,10 @@
     border-radius: 8px;
     width: 100%;
 
+    &--header {
+        padding: 9px 12px;
+    }
+
     @include text-p3-regular;
 
     transition:
