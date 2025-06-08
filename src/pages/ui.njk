@@ -181,5 +181,19 @@
         type="text"
         placeholder="Text"
     >
+    <label class="form__options-option">
+    <div class="range-slider">
+        <div class="range-slider__track"></div>
+        <div class="range-slider__range"></div>
+        <input type="range" min="5" max="50" value="10" id="min">
+        <input type="range" min="5" max="50" value="40" id="max">
+    </div>
+    
+    <div class="range-values">
+        <span class="range-values-price" id="min-value">€10</span>
+        <span class="range-values-price" id="max-value">€40</span>
+    </div>
+    </label>
+
 </section>
 {% endblock %}

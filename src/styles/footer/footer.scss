@@ -91,6 +91,8 @@
 
     &__link {
         color: var(--color-secondary);
+
+        @include text-p2-regular;
     }
 
     &__newsletter {

@@ -6,13 +6,9 @@
     align-items: center;
     gap: 8px;
     cursor: pointer;
-
-    // padding: 4px;
     border: 2px solid transparent;
     border-radius: 5px;
     outline-offset: 0;
-    font-weight: 600;
-    letter-spacing: 0;
     transition: color var(--tran-duration);
 
     &:hover {
