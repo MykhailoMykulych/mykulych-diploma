@@ -213,16 +213,23 @@
     padding: 20px;
     border-radius: 8px;
     width: 100%;
+    transition:
+        border-color var(--tran-duration),
+        outline var(--tran-duration);
+
+    @include text-p2-regular;
+
+    &.error {
+        border-color: var(--status-negative);
+    }
+
+    &.success {
+        border-color: var(--status-positive);
+    }
 
     &--header {
         padding: 9px 12px;
     }
-
-    @include text-p3-regular;
-
-    transition:
-        border-color var(--tran-duration),
-        outline var(--tran-duration);
 
     &::placeholder {
         color: var(--fixed-secondary2);
@@ -235,7 +242,6 @@
         &::placeholder {
             color: var(--color-primary);
         }
-
     }
 
     &:hover {
@@ -246,6 +252,18 @@
     &:focus-visible {
         outline: 2px solid var(--marina-600);
         border-color: var(--marina-600);
+    }
+}
+
+.form__error-message {
+    @include text-p4-regular;
+
+    &.error {
+        color: var(--status-negative);
+    }
+
+    &.success {
+        color: var(--status-positive);
     }
 }
 
@@ -316,4 +334,3 @@
         @include text-p2-regular;
     }
 }
-

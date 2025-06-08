@@ -4,27 +4,31 @@
 
 		<div class="form__fields-group">
 			<label class="form__fields-label" for="full-name">{{ form_name }}</label>
-			<input type="text" id="full-name" name="full-name" class="form-field" placeholder="Amelia Robert Johnson" required>
+			<input type="text" id="full-name" name="full-name" class="form-field" placeholder="Amelia Robert Johnson" novalidate>
+			<div class="form__error-message"></div>
 		</div>
 
 		<div class="form__fields-group">
 			<label class="form__fields-label" for="email">{{ form_email }}</label>
-			<input type="email" id="email" name="email" class="form-field" placeholder="amelia.robertjohnson@pixmart.com" required>
+			<input type="email" id="email" name="email" class="form-field" placeholder="amelia.robertjohnson@pixmart.com" novalidate>
+			<div class="form__error-message"></div>
 		</div>
 
 		<div class="form__fields-group">
 			<label class="form__fields-label" for="subject">Subject</label>
-			<select id="subject" name="subject" class="form-field" required>
+			<select id="subject" name="subject" class="form-field" novalidate>
 				<option value="">General Inquiry</option>
 				<option value="general">General Inquiry</option>
 				<option value="support">Support</option>
 				<option value="feedback">Feedback</option>
 			</select>
+			<div class="form__error-message"></div>
 		</div>
 
 		<div class="form__fields-group">
 			<label class="form__fields-label" for="message">{{ form_message }}</label>
-			<textarea id="message" name="message" class="form-field form-field--textarea" placeholder="Enter your message ..." required></textarea>
+			<textarea id="message" name="message" class="form-field form-field--textarea" placeholder="Enter your message ..." novalidate></textarea>
+			<div class="form__error-message"></div>
 		</div>
 
 	</div>
@@ -39,7 +43,7 @@
 			</label>
 
 			<label class="form__options-option">
-				<input type="checkbox" class="default-checkbox" name="privacy" required>
+				<input type="checkbox" class="default-checkbox" name="privacy" novalidate>
 				<span class="custom-checkbox"></span>
 				{{ form_i_read }}
 			</label>

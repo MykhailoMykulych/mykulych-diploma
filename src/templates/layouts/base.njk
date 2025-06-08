@@ -86,6 +86,44 @@
 
             updateValues();
         </script>
-        
+
+        {# Script for form-fields error #}
+        <script>
+            const form = document.querySelector('.form');
+            const fields = form.querySelectorAll('.form-field');
+
+            form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            fields.forEach(field => {
+            const errorContainer = field.parentElement.querySelector('.form__error-message');
+            const value = field.value.trim();
+
+            // Проверка для обычных input, textarea
+            let isValid = field.checkValidity() && value !== '';
+
+            // Отдельная проверка для select
+            if (field.tagName.toLowerCase() === 'select') {
+            isValid = field.checkValidity() && field.value !== '';
+            }
+
+            if (!isValid) {
+            field.classList.remove('success');
+            field.classList.add('error');
+            errorContainer.classList.remove('success');
+            errorContainer.classList.add('error');
+            errorContainer.textContent = 'This field is required.';
+            } else {
+            field.classList.remove('error');
+            field.classList.add('success');
+            errorContainer.classList.remove('error');
+            errorContainer.classList.add('success');
+            errorContainer.textContent = 'Field validation is successful.';
+            }
+            });
+            });
+
+        </script>
+
     </body>
 </html>
