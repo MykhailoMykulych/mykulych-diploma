@@ -47,22 +47,49 @@
 }
 
 .card {
-    border-radius: 12px;
-    overflow: hidden;
-    min-width: 240px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
     flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 240px;
     cursor: pointer;
-    transition: opacity var(--tran-duration);
     position: relative;
 
     &__illustration {
+        position: relative;
+        transition: var(--tran-duration);
+
         &-img {
             border-radius: 20px;
         }
+    }
+
+    &:hover .card__illustration {
+        filter: brightness(0.6);
+    }
+
+    &__badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__hover-button {
+        position: absolute;
+        top: 29%;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%) translateZ(0);
+        pointer-events: none;
+        transition: var(--tran-duration);
+    }
+
+    &:hover .card__hover-button {
+        opacity: 1;
+        pointer-events: auto;
     }
 
     &__content {
@@ -88,35 +115,5 @@
         @include text-p2-medium;
 
         color: var(--marina-800);
-    }
-
-    &__badge {
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    &__hover-button {
-        position: absolute;
-        top: 29%;
-        left: 50% calc(-50%);
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-        pointer-events: none;
-        z-index: 100;
-    }
-
-    
-
-    &:hover .card__hover-button {
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    &:hover {
-        filter: brightness(
-            0.6
-        );
     }
 }
